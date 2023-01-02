@@ -1,0 +1,16 @@
+﻿@page "/pokemon/{PokemonId:int}"
+<h3>PokemonDetails</h3>
+
+@if(Pokemon != null)
+{
+    <img src="@Pokemon.ImageUrl" />
+    <p>@Pokemon.Name</p>
+    <p>@Pokemon.Id</p>
+    @foreach(var type in Pokemon.Types)
+    {
+        <PokemonTypeSlot Type=@type />
+    }
+}
+
+
+
