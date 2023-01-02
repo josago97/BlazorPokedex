@@ -74,8 +74,73 @@ img[b-9wtddes051] {
     }
 }
 /* /Pages/PokemonList.razor.rz.scp.css */
-.pokemon-list-item[b-g3auipiylc] {
+#title[b-g3auipiylc] {
+    margin: 20px 0px 10px 0px;
+    font-size: inherit;
+    font-weight: bold;
+    text-align: center;
+}
 
+#pokemon-list[b-g3auipiylc] {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-auto-rows: auto;
+    gap: 30px;
+    justify-content: center;
+    align-content: center;
+    place-items: center;
+    margin: 5vh 5vw 5vh 5vw;
+}
+
+.pokemon-list-item[b-g3auipiylc] {
+    width: 200px;
+    height: auto;
+    padding: 10px;
+}
+
+.image[b-g3auipiylc] {
+
+}
+
+.image img[b-g3auipiylc] {
+    width: 100%;
+    height: 180px;
+}
+
+.number[b-g3auipiylc] {
+    margin-top: 5px;
+}
+
+.name[b-g3auipiylc] {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.type-list[b-g3auipiylc] {
+    display: grid;
+    margin-top: 5px;
+    grid-template-columns: repeat(2, calc(50% - 5px));
+    grid-template-rows: auto;
+    justify-content: space-between;
+}
+
+
+@media (min-width: 800px) and (max-width: 1200px) {
+    #pokemon-list[b-g3auipiylc] {
+        grid-template-columns: repeat(3, auto);
+    }
+}
+
+@media (min-width: 500px) and (max-width: 800px) {
+    #pokemon-list[b-g3auipiylc] {
+        grid-template-columns: repeat(2, auto);
+    }
+}
+
+@media (max-width: 500px) {
+    #pokemon-list[b-g3auipiylc] {
+        grid-template-columns: repeat(1, auto);
+    }
 }
 /* /Pages/PokemonTypeSlot.razor.rz.scp.css */
 
@@ -85,6 +150,7 @@ div[b-s9v31yp01o] {
     width: auto;
     color: white;
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    text-align:center;
 }
 /* /Shared/MainLayout.razor.rz.scp.css */
 .page[b-s8c4x8xyto] {

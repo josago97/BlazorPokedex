@@ -1,7 +1,7 @@
 ﻿self.assetsManifest = {
   "assets": [
     {
-      "hash": "sha256-zGe3lzWfIHGyBUfifamw3ti+5bsNVGbKh3zPb4I1kG4=",
+      "hash": "sha256-C4MuEBOjIRE4D244nUwwqCAFJtlF\/SAbuSJvhmPGjSU=",
       "url": "css\/app.css"
     },
     {
@@ -49,15 +49,15 @@
       "url": "css\/open-iconic\/README.md"
     },
     {
-      "hash": "sha256-Jtxf9L+5ITKRc1gIRl4VbUpGkRNfOBXjYTdhJD4facM=",
+      "hash": "sha256-b\/lh4NzN6MqGNmLrdmJW5wbj6R8XhsgYuGpqLfNz8os=",
       "url": "favicon.ico"
     },
     {
-      "hash": "sha256-DbpQaq68ZSb5IoPosBErM1QWBfsbTxpJqhU0REi6wP4=",
+      "hash": "sha256-IHL9xRRUaoLIXVZ4NQ\/T1jiZmPrJDBjMtg60bKHyb7A=",
       "url": "icon-192.png"
     },
     {
-      "hash": "sha256-oEo6d+KqX5fjxTiZk\/w9NB3Mi0+ycS5yLwCKwr4IkbA=",
+      "hash": "sha256-zZEgKL\/Ri+c9YPiQMdCLdEta8wxalehom\/Wfq\/V8T0E=",
       "url": "icon-512.png"
     },
     {
@@ -101,7 +101,7 @@
       "url": "images\/pokemon-title.png"
     },
     {
-      "hash": "sha256-vWMhnW1NLEYy7pVM4NAljM7gwvyy0aAvZzTl9W\/8J9U=",
+      "hash": "sha256-HF+dBNkAKGcOigO3yeW+PdRM46T6mTKUj2SYNsPSzmQ=",
       "url": "index.html"
     },
     {
@@ -109,7 +109,7 @@
       "url": "manifest.json"
     },
     {
-      "hash": "sha256-VdsHI+bCDA350+zkWk3B6t77U1JmDOGx4N3UYirnJMg=",
+      "hash": "sha256-6CsK5RtxXGsOnXEUPClexkGkpYx0VgP9qKxUjS0dzDI=",
       "url": "resources\/pokedex.json"
     },
     {
@@ -141,7 +141,7 @@
       "url": "_framework\/icudt.dat"
     },
     {
-      "hash": "sha256-uKe5ilMGqJl82cXrxI83KIy9DMpanB60VSGgUQlRUqg=",
+      "hash": "sha256-tsJWnNmd1x1ArliNcHV+ik4COmRi8hlKM58dHz2PFNw=",
       "url": "_framework\/blazor.boot.json"
     },
     {
@@ -157,7 +157,7 @@
       "url": "_framework\/BlazorPokedex.Common.dll"
     },
     {
-      "hash": "sha256-AhUZH1\/bkLBkKRYaQRznYOt\/N08uvvfVpCjtmYYtqeU=",
+      "hash": "sha256-T3pwoIxxxBBY8CoCbjxQ0pihR+CI+2qJWRurzwcPtgg=",
       "url": "_framework\/BlazorPokedex.dll"
     },
     {
@@ -337,11 +337,11 @@
       "url": "_framework\/dotnet.7.0.1.5dpeksobh2.js"
     },
     {
-      "hash": "sha256-JQZfhpWhevaJ34zUjxV1IbRRx0N+XeOIuwZpi+LiFEU=",
+      "hash": "sha256-HJPb\/mAyXurty4H3HTFjrBPZrbIOmKlnsa+N0G0C2HQ=",
       "url": "_framework\/dotnet.wasm"
     },
     {
-      "hash": "sha256-M0EYPvx01WHQc5OYRUVTfHahQPGb3Dqv\/d6cOwkA5Do=",
+      "hash": "sha256-tBy55Qz+9mk5enKiR8zkf1Zms3fgZwr\/0KuwEpuNPDc=",
       "url": "BlazorPokedex.styles.css"
     },
     {
@@ -481,5 +481,5 @@
       "url": "_content\/Blazorise\/vendors\/Pickr.js"
     }
   ],
-  "version": "kZjzfdK2"
+  "version": "zg4hJtq3"
 };
