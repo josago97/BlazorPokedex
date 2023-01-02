@@ -14,7 +14,14 @@ jobs:
     # uses GitHub's checkout action to checkout code form the master branch
     - uses: actions/checkout@v2
     
-    # sets up .NET Core SDK 3.1
+    - name: Setup .NET Core CLI
+      uses: baruchiro/github-actions@0.0.1
+      
+     # Install wasm-tools
+    - name: Publish .NET Core Project
+      run: dotnet workload install wasm-tools
+    
+    # sets up .NET SDK 7.0.101
     - name: Setup .NET Core SDK
       uses: actions/setup-dotnet@v3.0.3
       with:
