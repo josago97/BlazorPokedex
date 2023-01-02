@@ -1,7 +1,7 @@
 ﻿self.assetsManifest = {
   "assets": [
     {
-      "hash": "sha256-Jg8ebqaGiiXessRJmsmHxBUFdNlonlZYCPbn43Cj4IE=",
+      "hash": "sha256-zGe3lzWfIHGyBUfifamw3ti+5bsNVGbKh3zPb4I1kG4=",
       "url": "css\/app.css"
     },
     {
@@ -11,6 +11,10 @@
     {
       "hash": "sha256-gBwg2tmA0Ci2u54gMF1jNCVku6vznarkLS6D76htNNQ=",
       "url": "css\/bootstrap\/bootstrap.min.css.map"
+    },
+    {
+      "hash": "sha256-+Q44zfEaCMmXduni5Td+IgCbk8sSUQwES2nWs+KKQz0=",
+      "url": "css\/open-iconic\/FONT-LICENSE"
     },
     {
       "hash": "sha256-BJ\/G+e+y7bQdrYkS2RBTyNfBHpA9IuGaPmf9htub5MQ=",
@@ -25,7 +29,7 @@
       "url": "css\/open-iconic\/font\/fonts\/open-iconic.otf"
     },
     {
-      "hash": "sha256-+P1oQ5jPzOVJGC52E1oxGXIXxxCyMlqy6A9cNxGYzVk=",
+      "hash": "sha256-oUpLdS+SoLJFwf4bzA3iKD7TCm66oLkTpAQlVJ2s1wc=",
       "url": "css\/open-iconic\/font\/fonts\/open-iconic.svg"
     },
     {
@@ -37,15 +41,11 @@
       "url": "css\/open-iconic\/font\/fonts\/open-iconic.woff"
     },
     {
-      "hash": "sha256-jA4J4h\/k76zVxbFKEaWwFKJccmO0voOQ1DbUW+5YNlI=",
-      "url": "css\/open-iconic\/FONT-LICENSE"
-    },
-    {
-      "hash": "sha256-aF5g\/izareSj02F3MPSoTGNbcMBl9nmZKDe04zjU\/ss=",
+      "hash": "sha256-s\/Is6Ey6jfNAEfXUIOyHrXXX+RcA8hzchYnuOIWUMl4=",
       "url": "css\/open-iconic\/ICON-LICENSE"
     },
     {
-      "hash": "sha256-p\/oxU91iBE+uaDr3kYOyZPuulf4YcPAMNIz6PRA\/tb0=",
+      "hash": "sha256-9wdNXQFE78LCNHo+Hq2eXMTx+YBf2gjsufVTJc8dAV0=",
       "url": "css\/open-iconic\/README.md"
     },
     {
@@ -101,11 +101,11 @@
       "url": "images\/pokemon-title.png"
     },
     {
-      "hash": "sha256-Bd8ibfHlJS3pGLsDb7e5fm\/28tUr1QCcjjQELri2K6w=",
+      "hash": "sha256-vWMhnW1NLEYy7pVM4NAljM7gwvyy0aAvZzTl9W\/8J9U=",
       "url": "index.html"
     },
     {
-      "hash": "sha256-i7p7xKi7koG3immgWf5uTre9PtiGCF7nwH9akepalwY=",
+      "hash": "sha256-f1bDFsRIC8B7zyG5FyjwmIpmod91lS8xZiaTVUnoDHA=",
       "url": "manifest.json"
     },
     {
@@ -113,7 +113,7 @@
       "url": "resources\/pokedex.json"
     },
     {
-      "hash": "sha256-yzFf+O\/mlH+Q9klUSqXP2kxGKOUFLPxaww8da8fKhGU=",
+      "hash": "sha256-4Yh4OTT5TEAPNyXEzOG+n5l2HPK294WFItz4SIelj88=",
       "url": "sample-data\/weather.json"
     },
     {
@@ -123,10 +123,6 @@
     {
       "hash": "sha256-6Aw0ALXLw\/A0vGcC5uG5GnFafYpL\/iHHLo22LyOR+TA=",
       "url": "_framework\/dotnet.timezones.blat"
-    },
-    {
-      "hash": "sha256-DXO3tJHXDOV4qgW\/w8ooggAgZdAVpa5ZllYYAQWpYIk=",
-      "url": "_framework\/icudt.dat"
     },
     {
       "hash": "sha256-SZLtQnRc0JkwqHab0VUVP7T3uBPSeYzxzDnpxPpUnHk=",
@@ -141,7 +137,11 @@
       "url": "_framework\/icudt_no_CJK.dat"
     },
     {
-      "hash": "sha256-u+DSF6LgHUzrmmiM9\/EPznKbYUpobA8TrhOz6wWJ\/II=",
+      "hash": "sha256-DXO3tJHXDOV4qgW\/w8ooggAgZdAVpa5ZllYYAQWpYIk=",
+      "url": "_framework\/icudt.dat"
+    },
+    {
+      "hash": "sha256-uKe5ilMGqJl82cXrxI83KIy9DMpanB60VSGgUQlRUqg=",
       "url": "_framework\/blazor.boot.json"
     },
     {
@@ -153,11 +153,11 @@
       "url": "_framework\/Blazorise.dll"
     },
     {
-      "hash": "sha256-dw0Y4Y\/t75YVSQ0ZEZ0Mur5Tit530EeU0NMfrkwCJns=",
+      "hash": "sha256-fHukucWcLr+uztvpVYXghKHc3\/QliHwGWm8aeAxha1c=",
       "url": "_framework\/BlazorPokedex.Common.dll"
     },
     {
-      "hash": "sha256-hQGeS3Q1CK8uZFRsnbBReb\/Ds8WOy4jdQxfGhUFacmk=",
+      "hash": "sha256-AhUZH1\/bkLBkKRYaQRznYOt\/N08uvvfVpCjtmYYtqeU=",
       "url": "_framework\/BlazorPokedex.dll"
     },
     {
@@ -333,15 +333,15 @@
       "url": "_framework\/System.Threading.dll"
     },
     {
-      "hash": "sha256-1J07sX9dRurZUfbsGjB9JaHeP6GGKmOH1WcfuXFxmQQ=",
-      "url": "_framework\/dotnet.7.0.1.ud33med4o4.js"
+      "hash": "sha256-CeOJpE8\/q0XxZMg9KKJBRuXemeCgxIKI8CXR7Q9Ol5k=",
+      "url": "_framework\/dotnet.7.0.1.5dpeksobh2.js"
     },
     {
-      "hash": "sha256-3BEtEr83vQ2x7zKuaou3dBoC\/a1DzznniOz4Pv6KLG8=",
+      "hash": "sha256-JQZfhpWhevaJ34zUjxV1IbRRx0N+XeOIuwZpi+LiFEU=",
       "url": "_framework\/dotnet.wasm"
     },
     {
-      "hash": "sha256-7TzQgd9LwuylJrexnWLEtiV5hM4taktnvRL\/cehOWp8=",
+      "hash": "sha256-M0EYPvx01WHQc5OYRUVTfHahQPGb3Dqv\/d6cOwkA5Do=",
       "url": "BlazorPokedex.styles.css"
     },
     {
@@ -481,5 +481,5 @@
       "url": "_content\/Blazorise\/vendors\/Pickr.js"
     }
   ],
-  "version": "QzSjzoux"
+  "version": "kZjzfdK2"
 };

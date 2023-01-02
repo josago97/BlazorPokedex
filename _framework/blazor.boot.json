@@ -9,8 +9,8 @@
     "assembly": {
       "Blazorise.Animate.dll": "sha256-Lm\/QhZarLOMKi0xnUz9i2D6A4wBk52bLe+GJFeW97cw=",
       "Blazorise.dll": "sha256-teUuJLNdaQyz7kSZJpp+7v3d2aD3GZ0iElUCByVsjuU=",
-      "BlazorPokedex.Common.dll": "sha256-dw0Y4Y\/t75YVSQ0ZEZ0Mur5Tit530EeU0NMfrkwCJns=",
-      "BlazorPokedex.dll": "sha256-hQGeS3Q1CK8uZFRsnbBReb\/Ds8WOy4jdQxfGhUFacmk=",
+      "BlazorPokedex.Common.dll": "sha256-fHukucWcLr+uztvpVYXghKHc3\/QliHwGWm8aeAxha1c=",
+      "BlazorPokedex.dll": "sha256-AhUZH1\/bkLBkKRYaQRznYOt\/N08uvvfVpCjtmYYtqeU=",
       "Microsoft.AspNetCore.Components.dll": "sha256-rg\/v+SgNkIsVKLQDDxx05GTDtc2Oaw47YBA\/JL9\/+1Y=",
       "Microsoft.AspNetCore.Components.Forms.dll": "sha256-Wxv6NflJk2NmB+9GOAZ712HKx9xMKfrLE8acxeGFjR4=",
       "Microsoft.AspNetCore.Components.Web.dll": "sha256-7XuPHfaFkuWM3Q+Xn3iQA3+Q3x+8BdBjBwmaKXaFkNg=",
@@ -60,18 +60,18 @@
     "libraryInitializers": null,
     "pdb": null,
     "runtime": {
-      "dotnet.7.0.1.ud33med4o4.js": "sha256-1J07sX9dRurZUfbsGjB9JaHeP6GGKmOH1WcfuXFxmQQ=",
+      "dotnet.7.0.1.5dpeksobh2.js": "sha256-CeOJpE8\/q0XxZMg9KKJBRuXemeCgxIKI8CXR7Q9Ol5k=",
       "dotnet.timezones.blat": "sha256-6Aw0ALXLw\/A0vGcC5uG5GnFafYpL\/iHHLo22LyOR+TA=",
-      "dotnet.wasm": "sha256-3BEtEr83vQ2x7zKuaou3dBoC\/a1DzznniOz4Pv6KLG8=",
-      "icudt.dat": "sha256-DXO3tJHXDOV4qgW\/w8ooggAgZdAVpa5ZllYYAQWpYIk=",
+      "dotnet.wasm": "sha256-JQZfhpWhevaJ34zUjxV1IbRRx0N+XeOIuwZpi+LiFEU=",
       "icudt_CJK.dat": "sha256-SZLtQnRc0JkwqHab0VUVP7T3uBPSeYzxzDnpxPpUnHk=",
       "icudt_EFIGS.dat": "sha256-l7NtS3cI+3VUoQ2XQvlzMb8x4Ow1BtnOJNLWc6bifW0=",
-      "icudt_no_CJK.dat": "sha256-SNAStZO8ryN4gEbGzRYHea+b+VMpFMMNWXKTM3Y1gH4="
+      "icudt_no_CJK.dat": "sha256-SNAStZO8ryN4gEbGzRYHea+b+VMpFMMNWXKTM3Y1gH4=",
+      "icudt.dat": "sha256-DXO3tJHXDOV4qgW\/w8ooggAgZdAVpa5ZllYYAQWpYIk="
     },
     "runtimeAssets": {
       "dotnet.wasm": {
         "behavior": "dotnetwasm",
-        "hash": "sha256-3BEtEr83vQ2x7zKuaou3dBoC\/a1DzznniOz4Pv6KLG8="
+        "hash": "sha256-JQZfhpWhevaJ34zUjxV1IbRRx0N+XeOIuwZpi+LiFEU="
       }
     },
     "satelliteResources": null

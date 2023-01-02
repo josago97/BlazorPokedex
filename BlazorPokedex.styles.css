@@ -1,14 +1,14 @@
 /* /Pages/GenerationList.razor.rz.scp.css */
-#title[b-sbendh68ea] {
+#title[b-80dfvaedkv] {
     margin: 20px auto 2vw auto;
     text-align: center;
 }
 
-#title img[b-sbendh68ea] {
+#title img[b-80dfvaedkv] {
     width: clamp(100px, 50vw, 500px);
 }
 
-#generation-list[b-sbendh68ea] {
+#generation-list[b-80dfvaedkv] {
     display: grid;
     grid-template-columns: repeat(4, auto);
     grid-auto-rows: auto;
@@ -19,7 +19,7 @@
     margin: 5vh 5vw 5vh 5vw;
 }
 
-.generation-list-item[b-sbendh68ea] {
+.generation-list-item[b-80dfvaedkv] {
     display: flex;
     flex-direction: column;
     width: clamp(50px, 40vw, 300px);
@@ -31,7 +31,7 @@
     font-size: clamp(10px, 5vw, 30px);
 }
 
-.generation-list-item .image[b-sbendh68ea] {
+.generation-list-item .image[b-80dfvaedkv] {
     display: flex;
     flex: 1;
     min-height: 0;
@@ -40,18 +40,18 @@
     align-items: flex-end;
 }
 
-.generation-list-item .image img[b-sbendh68ea] {
+.generation-list-item .image img[b-80dfvaedkv] {
     max-height: 100%;
     max-width: 100%;
 }
 
 @media (max-width: 1350px) {
-    #generation-list[b-sbendh68ea] {
+    #generation-list[b-80dfvaedkv] {
         grid-template-columns: repeat(2, auto);
     }
 }
 /* /Pages/Loading.razor.rz.scp.css */
-.container[b-g1yp94fh0p] {
+.container[b-9wtddes051] {
     display:flex;
     flex-direction:column;
     justify-content: center;
@@ -60,26 +60,26 @@
     min-height: 100vh;
 }
 
-img[b-g1yp94fh0p] {
+img[b-9wtddes051] {
     margin-top:20px;
-    animation: spin-b-g1yp94fh0p 4s linear infinite;
+    animation: spin-b-9wtddes051 4s linear infinite;
     width:clamp(40px, 50vh, 300px);
     height:auto;
 }
 
-@keyframes spin-b-g1yp94fh0p {
+@keyframes spin-b-9wtddes051 {
     100% {
         -webkit-transform: rotate(360deg);
         transform: rotate(360deg);
     }
 }
 /* /Pages/PokemonList.razor.rz.scp.css */
-.pokemon-list-item[b-iis9ktga4s] {
+.pokemon-list-item[b-g3auipiylc] {
 
 }
 /* /Pages/PokemonTypeSlot.razor.rz.scp.css */
 
-div[b-ib1uo0ygw1] {
+div[b-s9v31yp01o] {
     border-radius: 20px;
     padding: 2px 10px 2px 10px;
     width: auto;
@@ -87,21 +87,21 @@ div[b-ib1uo0ygw1] {
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 /* /Shared/MainLayout.razor.rz.scp.css */
-.page[b-qzzp0wl4ft] {
+.page[b-s8c4x8xyto] {
     position: relative;
     display: flex;
     flex-direction: column;
 }
 
-main[b-qzzp0wl4ft] {
+main[b-s8c4x8xyto] {
     flex: 1;
 }
 
-.sidebar[b-qzzp0wl4ft] {
+.sidebar[b-s8c4x8xyto] {
     background-image: linear-gradient(180deg, rgb(5, 39, 103) 0%, #3a0647 70%);
 }
 
-.top-row[b-qzzp0wl4ft] {
+.top-row[b-s8c4x8xyto] {
     background-color: #f7f7f7;
     border-bottom: 1px solid #d6d5d5;
     justify-content: flex-end;
@@ -110,99 +110,99 @@ main[b-qzzp0wl4ft] {
     align-items: center;
 }
 
-    .top-row[b-qzzp0wl4ft]  a, .top-row[b-qzzp0wl4ft]  .btn-link {
+    .top-row[b-s8c4x8xyto]  a, .top-row[b-s8c4x8xyto]  .btn-link {
         white-space: nowrap;
         margin-left: 1.5rem;
         text-decoration: none;
     }
 
-    .top-row[b-qzzp0wl4ft]  a:hover, .top-row[b-qzzp0wl4ft]  .btn-link:hover {
+    .top-row[b-s8c4x8xyto]  a:hover, .top-row[b-s8c4x8xyto]  .btn-link:hover {
         text-decoration: underline;
     }
 
-    .top-row[b-qzzp0wl4ft]  a:first-child {
+    .top-row[b-s8c4x8xyto]  a:first-child {
         overflow: hidden;
         text-overflow: ellipsis;
     }
 
 @media (max-width: 640.98px) {
-    .top-row:not(.auth)[b-qzzp0wl4ft] {
+    .top-row:not(.auth)[b-s8c4x8xyto] {
         display: none;
     }
 
-    .top-row.auth[b-qzzp0wl4ft] {
+    .top-row.auth[b-s8c4x8xyto] {
         justify-content: space-between;
     }
 
-    .top-row[b-qzzp0wl4ft]  a, .top-row[b-qzzp0wl4ft]  .btn-link {
+    .top-row[b-s8c4x8xyto]  a, .top-row[b-s8c4x8xyto]  .btn-link {
         margin-left: 0;
     }
 }
 
 @media (min-width: 641px) {
-    .page[b-qzzp0wl4ft] {
+    .page[b-s8c4x8xyto] {
         flex-direction: row;
     }
 
-    .sidebar[b-qzzp0wl4ft] {
+    .sidebar[b-s8c4x8xyto] {
         width: 250px;
         height: 100vh;
         position: sticky;
         top: 0;
     }
 
-    .top-row[b-qzzp0wl4ft] {
+    .top-row[b-s8c4x8xyto] {
         position: sticky;
         top: 0;
         z-index: 1;
     }
 
-    .top-row.auth[b-qzzp0wl4ft]  a:first-child {
+    .top-row.auth[b-s8c4x8xyto]  a:first-child {
         flex: 1;
         text-align: right;
         width: 0;
     }
 
-    .top-row[b-qzzp0wl4ft], article[b-qzzp0wl4ft] {
+    .top-row[b-s8c4x8xyto], article[b-s8c4x8xyto] {
         padding-left: 2rem !important;
         padding-right: 1.5rem !important;
     }
 }
 /* /Shared/NavMenu.razor.rz.scp.css */
-.navbar-toggler[b-wruwj4kyeu] {
+.navbar-toggler[b-ck049dplmd] {
     background-color: rgba(255, 255, 255, 0.1);
 }
 
-.top-row[b-wruwj4kyeu] {
+.top-row[b-ck049dplmd] {
     height: 3.5rem;
     background-color: rgba(0,0,0,0.4);
 }
 
-.navbar-brand[b-wruwj4kyeu] {
+.navbar-brand[b-ck049dplmd] {
     font-size: 1.1rem;
 }
 
-.oi[b-wruwj4kyeu] {
+.oi[b-ck049dplmd] {
     width: 2rem;
     font-size: 1.1rem;
     vertical-align: text-top;
     top: -2px;
 }
 
-.nav-item[b-wruwj4kyeu] {
+.nav-item[b-ck049dplmd] {
     font-size: 0.9rem;
     padding-bottom: 0.5rem;
 }
 
-    .nav-item:first-of-type[b-wruwj4kyeu] {
+    .nav-item:first-of-type[b-ck049dplmd] {
         padding-top: 1rem;
     }
 
-    .nav-item:last-of-type[b-wruwj4kyeu] {
+    .nav-item:last-of-type[b-ck049dplmd] {
         padding-bottom: 1rem;
     }
 
-    .nav-item[b-wruwj4kyeu]  a {
+    .nav-item[b-ck049dplmd]  a {
         color: #d7d7d7;
         border-radius: 4px;
         height: 3rem;
@@ -211,22 +211,22 @@ main[b-qzzp0wl4ft] {
         line-height: 3rem;
     }
 
-.nav-item[b-wruwj4kyeu]  a.active {
+.nav-item[b-ck049dplmd]  a.active {
     background-color: rgba(255,255,255,0.25);
     color: white;
 }
 
-.nav-item[b-wruwj4kyeu]  a:hover {
+.nav-item[b-ck049dplmd]  a:hover {
     background-color: rgba(255,255,255,0.1);
     color: white;
 }
 
 @media (min-width: 641px) {
-    .navbar-toggler[b-wruwj4kyeu] {
+    .navbar-toggler[b-ck049dplmd] {
         display: none;
     }
 
-    .collapse[b-wruwj4kyeu] {
+    .collapse[b-ck049dplmd] {
         /* Never collapse the sidebar for wide screens */
         display: block;
     }
