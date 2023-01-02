@@ -49,6 +49,23 @@ public class PokeApi
     {
         await EnsureInitAsync();
 
-        return null;
+        Pokemon result = null;
+        int pokemonsCount = 0;
+        int count = 0;
+        //int count = id;
+
+        while (result == null && count < _data.Length)
+        {
+            Generation generation = _data[count];
+            /*pokemonsCount+= pokemonsCount
+            if (id <= generation.Pokemons.Length)
+            {
+                result = generation.Pokemons[];
+            }*/
+
+            count++;
+        }
+
+        return result;
     }
 }

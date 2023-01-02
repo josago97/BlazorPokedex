@@ -1,7 +1,11 @@
 ﻿@page "/pokemon/{PokemonId:int}"
 <h3>PokemonDetails</h3>
 
-@if(Pokemon != null)
+@if(Pokemon == null)
+{
+   <Loading/> 
+}
+else
 {
     <img src="@Pokemon.ImageUrl" />
     <p>@Pokemon.Name</p>
