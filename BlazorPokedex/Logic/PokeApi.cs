@@ -1,9 +1,5 @@
 ﻿using System.Net.Http.Json;
 using BlazorPokedex.Common;
-using Microsoft.AspNetCore.Components;
-using static System.Net.WebRequestMethods;
-using static System.Runtime.InteropServices.JavaScript.JSType;
-using static BlazorPokedex.Pages.FetchData;
 
 namespace BlazorPokedex.Logic;
 
@@ -52,18 +48,20 @@ public class PokeApi
         Pokemon result = null;
         int pokemonsCount = 0;
         int count = 0;
-        //int count = id;
 
         while (result == null && count < _data.Length)
         {
             Generation generation = _data[count];
-            /*pokemonsCount+= pokemonsCount
+
             if (id <= generation.Pokemons.Length)
             {
-                result = generation.Pokemons[];
-            }*/
-
-            count++;
+                result = generation.Pokemons[id - pokemonsCount - 1];
+            }
+            else
+            {
+                pokemonsCount += generation.Pokemons.Length;
+                count++;
+            }
         }
 
         return result;

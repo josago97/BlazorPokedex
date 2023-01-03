@@ -1,5 +1,4 @@
 ﻿@page "/pokemon/{PokemonId:int}"
-<h3>PokemonDetails</h3>
 
 @if(Pokemon == null)
 {
@@ -7,13 +6,37 @@
 }
 else
 {
-    <img src="@Pokemon.ImageUrl" />
-    <p>@Pokemon.Name</p>
-    <p>@Pokemon.Id</p>
-    @foreach(var type in Pokemon.Types)
-    {
-        <PokemonTypeSlot Type=@type />
-    }
+    <div class="container">
+        <div class="content">
+            <div class="title">
+                <h1 class="pokemon-name">@Pokemon.Name</h1>
+                <h1 class="pokemon-number">Nº @($"{Pokemon.Id:000}")</h1>
+            </div>
+            <div class="pokemon-data">
+                <div class="pokemon-image"><img src="@Pokemon.ImageUrl" /></div>
+                <div>
+                    <div>Height: @($"{Pokemon.Height / 10.0:0.0}") m</div>
+                    <div>Weight: @($"{Pokemon.Weight / 10.0:0.0}") kg</div>
+                    <div class="pokemon-type-list">
+                        @foreach (var type in Pokemon.Types)
+                        {
+                            <PokemonTypeSlot Type=@type />
+                        }
+                    </div>
+                </div>
+            </div>
+            <div class="pokemon-stat-container">
+                @foreach (var stat in Pokemon.Stats)
+                {
+                    <div class="pokemon-stat-name">@stat.Name</div>
+                    <div class="pokemon-stat-value">@stat.Value</div>
+                    <div class="stat-slider">
+                        <div class="stat-slider-value" style="width: @(stat.Value * 100 / 255)%"/>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
 }
 
 

@@ -1,6 +1,6 @@
 ﻿.container {
-    display:flex;
-    flex-direction:column;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -8,10 +8,10 @@
 }
 
 img {
-    margin-top:20px;
+    margin-top: 20px;
     animation: spin 4s linear infinite;
-    width:clamp(40px, 50vh, 300px);
-    height:auto;
+    width: clamp(40px, 50vmin, 300px);
+    height: auto;
 }
 
 @keyframes spin {

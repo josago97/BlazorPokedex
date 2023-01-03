@@ -60,7 +60,11 @@ internal class Program
                 Types = pokemon.Types.OrderBy(t => t.Slot).Select(ConvertToPokemonType).ToArray(),
                 Height = pokemon.Height,
                 Weight = pokemon.Weight,
-                //HealPoint = pokemon.Stats
+                Stats = pokemon.Stats.Select(s => new PokemonStat()
+                {
+                    Name = s.Stat.Name,
+                    Value = s.BaseStat
+                }).ToArray()
             };
         };
 

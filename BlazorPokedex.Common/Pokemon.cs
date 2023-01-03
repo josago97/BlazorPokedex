@@ -8,6 +8,5 @@ public class Pokemon
     public PokemonType[] Types { get; set; }
     public int Height { get; set; }
     public int Weight { get; set; }
-    public int HealPoint { get; set; }
-    public int Attack { get; set; }
+    public PokemonStat[] Stats { get; set; }
 }

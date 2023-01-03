@@ -15,6 +15,7 @@ using BlazorPokedex;
 using BlazorPokedex.Shared;
 using BlazorPokedex.Logic;
 using BlazorPokedex.Common;
+using System.Drawing;
 
 namespace BlazorPokedex.Pages;
 
