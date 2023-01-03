@@ -7,7 +7,7 @@
     <title>Pokédex</title>
     <link rel="icon" type="image/x-icon" href="favicon.ico" />
     <base href="/BlazorPokedex/" />
-    <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet" />
+    <!--<link href="css/bootstrap/bootstrap.min.css" rel="stylesheet" />-->
     <link href="css/app.css" rel="stylesheet" />
     <link href="BlazorPokedex.styles.css" rel="stylesheet" />
     <link href="manifest.json" rel="manifest" />
@@ -17,9 +17,9 @@
 
 <body>
     <div id="app">
-        <div class="container">
+        <div class="loading-container">
             <h2>Loading...</h2>
-            <img id="pokeball" src="images/pokeball.png" />
+            <img class="loading-pokeball" src="images/pokeball.png" />
         </div>
     </div>
 
@@ -33,7 +33,7 @@
     <script src="_content/Blazorise.Animate/blazorise.animate.js?v=1.1.5.0"></script>
 
     <style>
-        .container {
+        .loading-container {
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -42,14 +42,14 @@
             min-height: 100vh;
         }
 
-        #pokeball {
+        .loading-pokeball {
             margin-top: 20px;
-            animation: spin 4s linear infinite;
-            width: clamp(40px, 50vh, 300px);
+            animation: loading-spin 4s linear infinite;
+            width: clamp(40px, 50vmin, 300px);
             height: auto;
         }
 
-        @keyframes spin {
+        @keyframes loading-spin {
             100% {
                 -webkit-transform: rotate(360deg);
                 transform: rotate(360deg);
