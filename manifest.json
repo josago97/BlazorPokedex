@@ -1,6 +1,6 @@
 {
-  "name": "BlazorPokedex",
-  "short_name": "BlazorPokedex",
+  "name": "BlazorPokedex.Wasm",
+  "short_name": "BlazorPokedex.Wasm",
   "start_url": "./",
   "display": "standalone",
   "background_color": "#ffffff",
