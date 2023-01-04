@@ -2,6 +2,6 @@
 
 public class PokemonStat
 {
-    public string Name { get; set; }
+    public PokemonStatType Type { get; set; }
     public int Value { get; set; }
 }

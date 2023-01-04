@@ -1,0 +1,22 @@
+﻿/*.container2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+}
+
+img {
+    margin-top: 20px;
+    animation: spin 4s linear infinite;
+    width: clamp(40px, 50vmin, 300px);
+    height: auto;
+}
+
+@keyframes spin {
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}*/

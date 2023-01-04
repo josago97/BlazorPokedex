@@ -1,0 +1,30 @@
+﻿@page "/generation/{Generation:int}"
+@using BlazorPokedex.BlazorCommon.Components
+
+@if (Pokemons == null)
+{
+    <Loading/>
+}
+else
+{
+    <div id="title"><h1>Generation @Generation</h1></div>
+
+    <div class="pokemon-list">
+        @foreach(var pokemon in Pokemons)
+        {
+            <div class="pokemon-list-item list-item">
+                <a href=@($"pokemon/{pokemon.Id}")>
+                    <div class="image"><img src=@pokemon.ImageUrl /></div>
+                    <div class="number">@($"Nº {pokemon.Id:000}")</div>
+                    <div class="name">@pokemon.Name</div>
+                    <div class="type-list">
+                        @foreach(var type in pokemon.Types)
+                        {
+                            <PokemonTypeSlot Type=@type />
+                        }
+                    </div>
+                </a>
+            </div>
+        }
+    </div>
+}
