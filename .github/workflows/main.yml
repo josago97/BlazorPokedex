@@ -30,7 +30,7 @@ jobs:
 
     # publishes Blazor project to the release-folder
     - name: Publish .NET Core Project
-      run: dotnet publish BlazorPokedex/BlazorPokedex.csproj -c Release -o release --nologo
+      run: dotnet publish BlazorPokedex.Wasm/BlazorPokedex.Wasm.csproj -c Release -o release --nologo
     
     # changes the base-tag in index.html from '/' to 'BlazorPokedex' to match GitHub Pages repository subdirectory
     - name: Change base-tag in index.html from / to BlazorPokedex
