@@ -20,25 +20,23 @@ jobs:
     # uses GitHub's checkout action to checkout code form the master branch
     - uses: actions/checkout@v2
     
-    # sets up .NET SDK 7.0.101
-    - name: Setup .NET Core SDK
+    # sets up .NET SDK
+    - name: Setup .NET SDK
       uses: actions/setup-dotnet@v3.0.3
       with:
-        dotnet-version: 7.0.101
+        dotnet-version: | 
+            6.0.x
+            7.0.x
 
      # Install wasm-tools
     - name: Install wasm-tools
       run: dotnet workload install wasm-tools
 
     # publishes Blazor project to the release-folder
-    - name: Publish .NET Core Project
+    - name: Publish .NET Project
       run: dotnet publish $PROJECT_NAME/$PROJECT_NAME.csproj -c Release -o release --nologo
       
-    # changes the base-tag in index.html from '/' to '$REPO_NAME' to match GitHub Pages repository subdirectory
-    #- name: Change base-tag in index.html from / to $REPO_NAME
-     # run: sed -i 's/<base href="\/" \/>/<base href="\/${{ env.REPO_NAME }}\/" \/>/g' release/wwwroot/index.html
-      
-       # change base tag in all html files to include subfolder
+     # change base tag in all html files to include subfolder
     - name: Change base tag
       working-directory: release/wwwroot
       run: |
