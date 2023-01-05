@@ -22,14 +22,6 @@ jobs:
     # uses GitHub's checkout action to checkout code form the master branch
     - uses: actions/checkout@v2
     
-    - name: prueba
-      run: |
-      touch prueba.txt
-      echo '<base href="\/" \/>' > prueba.txt
-      sed -i 's/<base href="\/" \/>/<base href="\/$REPO_NAME\/" \/>/g' prueba.txt
-      echo "Nombre projecto ASDASD/$REPO_NAME/ASDASD"
-      cat prueba.txt
-    
     # sets up .NET SDK 7.0.101
     - name: Setup .NET Core SDK
       uses: actions/setup-dotnet@v3.0.3
@@ -43,6 +35,10 @@ jobs:
     # publishes Blazor project to the release-folder
     - name: Publish .NET Core Project
       run: dotnet publish $PROJECT_NAME/$PROJECT_NAME.csproj -c Release -o Publish --nologo
+      
+      # change base tag in all html files to include subfolder
+    - name: Change base-tag in index.html from / to $REPO_NAME
+      run: sed -i 's/<base href="\/" \/>/<base href="\/$REPO_NAME\/" \/>/g' Publish/wwwroot/index.html
       
     # Fix integrity errors
     - name: Fix service-worker-assets.js hashes
@@ -75,11 +71,6 @@ jobs:
         done
 
         echo -n "$jsFile" > service-worker-assets.js
-      
-    # change base tag in all html files to include subfolder
-    - name: Change base-tag in index.html from / to $REPO_NAME
-      run: sed -i 's/<base href="\/" \/>/<base href="\/$REPO_NAME\/" \/>/g' Publish/wwwroot/index.html
-    
     
     # copy index.html to 404.html to serve the same file when a file is not found
     - name: copy index.html to 404.html
