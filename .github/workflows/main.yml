@@ -1,5 +1,11 @@
 name: Deploy to GitHub Pages
 
+# Declaring custom variables
+env:
+  PROJECT_NAME: BlazorPokedex.Wasm
+  PUBLISH_FOLDER: release
+  REPO_NAME: ${{ github.event.repository.name }}
+
 # Run workflow on every push to the master branch
 on: 
   push: 
@@ -27,11 +33,11 @@ jobs:
 
     # publishes Blazor project to the release-folder
     - name: Publish .NET Core Project
-      run: dotnet publish BlazorPokedex.Wasm/BlazorPokedex.Wasm.csproj -c Release -o release --nologo
+      run: dotnet publish $PROJECT_NAME/$PROJECT_NAME.csproj -c Release -o $PUBLISH_FOLDER --nologo
       
-    # changes the base-tag in index.html from '/' to 'BlazorPokedex' to match GitHub Pages repository subdirectory
-    - name: Change base-tag in index.html from / to BlazorGitHubPagesDemo
-      run: sed -i 's/<base href="\/" \/>/<base href="\/BlazorPokedex\/" \/>/g' release/wwwroot/index.html
+    # changes the base-tag in index.html from '/' to '$REPO_NAME' to match GitHub Pages repository subdirectory
+    - name: Change base-tag in index.html from / to $REPO_NAME
+      run: sed -i 's/<base href="\/" \/>/<base href="\/$REPO_NAME\/" \/>/g' release/wwwroot/index.html
       
       
     # Fix integrity errors
@@ -79,4 +85,4 @@ jobs:
       with:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         BRANCH: gh-pages
-        FOLDER: release/wwwroot
+        FOLDER: $PUBLISH_FOLDER/wwwroot
