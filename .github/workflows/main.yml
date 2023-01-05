@@ -37,11 +37,11 @@ jobs:
 
     # publishes Blazor project to the release-folder
     - name: Publish .NET Core Project
-      run: dotnet publish $PROJECT_NAME/$PROJECT_NAME.csproj -c Release -o $PUBLISH_FOLDER_OUTPUT --nologo
+      run: dotnet publish $PROJECT_NAME/$PROJECT_NAME.csproj -c Release -o Release/output --nologo
       
     # Fix integrity errors
     - name: Fix service-worker-assets.js hashes
-      working-directory: $PUBLISH_FOLDER_OUTPUT/wwwroot
+      working-directory: Release/output/wwwroot
       run: |
         jsFile=$(<service-worker-assets.js)
         # remove JavaScript from contents so it can be interpreted as JSON
@@ -73,12 +73,12 @@ jobs:
     
     # Use NodeJS react-snap utitility to prerender static website
     - name: prerender Blazor client
-      working-directory: $PUBLISH_FOLDER_OUTPUT
+      working-directory: Release
       run: npx react-snap
       
     # change base tag in all html files to include subfolder
     - name: Change base tag
-      working-directory: $PUBLISH_FOLDER_OUTPUT/wwwroot
+      working-directory: Release/output/wwwroot
       run: |
         find . -name "*.html" | while read htmlFile; do
             sed -i 's/<base href="\/"/<base href="\/$REPO_NAME\/"/g' $htmlFile
@@ -92,11 +92,11 @@ jobs:
 
     # add .nojekyll file to tell GitHub pages to not treat this as a Jekyll project. (Allow files and folders starting with an underscore)
     - name: Add .nojekyll file
-      run: touch $PUBLISH_FOLDER_OUTPUT/wwwroot/.nojekyll
+      run: touch Release/output/wwwroot/.nojekyll
       
     - name: Commit wwwroot to GitHub Pages
       uses: JamesIves/github-pages-deploy-action@3.7.1
       with:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         BRANCH: gh-pages
-        FOLDER: $PUBLISH_FOLDER_OUTPUT/wwwroot
+        FOLDER: Release/output/wwwroot
