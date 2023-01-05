@@ -1,22 +1,24 @@
 ﻿
-<div class="navbar">
-    <img src="@Utils.GetStaticFileUrl("images/pokemon-title.png")" />
-    <button title="Navigation menu" class="navbar-toggler" @onclick="ToggleNavMenuAsync">
-        <span class="oi oi-menu navbar-toggler-icon" aria-hidden="true"></span>
-    </button>
-</div>
+<div class="sidebar @SidebarCssClass">
+    <div class="navbar">
+        <img src="@Utils.GetStaticFileUrl("images/pokemon-title.png")" />
+        <button title="Navigation menu" class="navbar-toggler" @onclick="ToggleNavMenuAsync">
+            <span class="oi oi-menu navbar-toggler-icon" aria-hidden="true"></span>
+        </button>
+    </div>
 
-<div class="@NavMenuCssClass nav-scrollable" @onclick="ToggleNavMenuAsync">
-    @if (Generations != null)
-    {
-        <div class="nav-list">
-            @foreach(var generation in Generations)
-            {
-                <a class="generation-item list-item" href=@($"generation/{generation.Id}")>
-                    @($"Generation {generation.Id}")
-                    <div class="image"><img src=@Utils.GetStaticFileUrl($"images/gen{generation.Id}.png") /></div>
-                </a> 
-            }
-        </div>
-    }
+    <div class="@NavBarContentCssClass" @onclick="ToggleNavMenuAsync">
+        @if (Generations != null)
+        {
+            <div class="nav-list">
+                @foreach (var generation in Generations)
+                {
+                    <a class="generation-item list-item" href=@($"generation/{generation.Id}")>
+                        @($"Generation {generation.Id}")
+                        <div class="image"><img src=@Utils.GetStaticFileUrl($"images/gen{generation.Id}.png") /></div>
+                    </a> 
+                }
+            </div>
+        }
+    </div>
 </div>

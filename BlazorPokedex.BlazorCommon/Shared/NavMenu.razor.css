@@ -14,12 +14,12 @@
 .generation-item {
     display: flex;
     flex-direction: column;
-    height: clamp(40px, 20vw, 140px);
+    height: 100%;
     border-radius: 25px;
     padding: clamp(5px, 2vw, 10px);
     text-align: center;
     font-weight: bold;
-    font-size: clamp(10px, 5vw, 25px);
+    font-size: clamp(15px, 5vw, 25px);
 }
 
 .generation-item .image {

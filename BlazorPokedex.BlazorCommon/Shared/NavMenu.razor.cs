@@ -7,7 +7,7 @@ namespace BlazorPokedex.BlazorCommon.Shared;
 
 public partial class NavMenu
 {
-    private bool _collapseNavMenu = true;
+    private bool _isCollapsed = true;
 
     [Inject]
     public IPokeApi PokeApi { get; set; }
@@ -16,7 +16,8 @@ public partial class NavMenu
 
     private Generation[] Generations { get; set; }
     private IJSObjectReference JSModule { get; set; }
-    private string NavMenuCssClass => _collapseNavMenu ? "collapse" : null;
+    private string SidebarCssClass => "sidebar-" + (_isCollapsed ? "collapse" : "extend");
+    private string NavBarContentCssClass => _isCollapsed ? "collapse" : null;
 
     protected override async Task OnInitializedAsync()
     {
@@ -40,9 +41,7 @@ public partial class NavMenu
     {
         if (await JSModule.InvokeAsync<bool>("isCollapsed"))
         {
-            Console.WriteLine(_collapseNavMenu);
-            _collapseNavMenu = !_collapseNavMenu;
-            Console.WriteLine(_collapseNavMenu);
+            _isCollapsed = !_isCollapsed;
         }
     }
 }

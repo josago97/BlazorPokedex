@@ -1,30 +1,37 @@
-﻿#title {
-    margin: 20px 0px 10px 0px;
-    font-size: inherit;
+﻿.title {
+    margin-top: 20px;
+    font-size: 35px;
     font-weight: bold;
     text-align: center;
 }
 
+.data-container {
+    width: 100%;
+    container-name: container-size;
+    container-type: inline-size;
+}
+
 .pokemon-list {
     display: grid;
-    grid-template-columns: repeat(4, auto);
+    grid-template-columns: repeat(4, 200px);
     grid-auto-rows: auto;
     gap: 30px;
     justify-content: center;
     align-content: center;
     place-items: center;
-    margin: 5vh 5vw 5vh 5vw;
+    margin: 20px;
 }
 
-.pokemon-list-item {
-    width: 200px;
+.pokemon-item {
+    width: 100%;
     height: auto;
     padding: 10px;
 }
 
 .image img {
     width: 100%;
-    height: 180px;
+    height: auto;
+    aspect-ratio: 1 / 1;
 }
 
 .number {
@@ -39,25 +46,25 @@
 .type-list {
     display: grid;
     margin-top: 5px;
-    grid-template-columns: repeat(2, calc(50% - 5px));
-    grid-template-rows: auto;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 5px;
     justify-content: space-between;
 }
 
-@container main-size (width >= 700px) and (width < 920px) {
+@container container-size (width >= 490px) and (width < 920px) {
     .pokemon-list {
-        grid-template-columns: repeat(3, auto);
+        grid-template-columns: repeat(auto-fill, 200px);
     }
 }
 
-@container main-size (width >= 450px) and (width < 700px) {
+@container container-size (width < 490px) {
     .pokemon-list {
-        grid-template-columns: repeat(2, auto);
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
     }
-}
 
-@container main-size (width < 450px) {
-    .pokemon-list {
-        grid-template-columns: auto;
+    /* Set max and min width to all items in the grid */
+    .pokemon-list > * {
+        max-width: 200px;
+        min-width: 150px;
     }
 }
