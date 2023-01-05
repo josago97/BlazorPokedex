@@ -1,5 +1,11 @@
 name: Deploy to GitHub Pages
 
+# Declaring custom variables
+env:
+  PUBLISH_FOLDER: Release
+  PUBLISH_FOLDER_OUTPUT: Release/output
+  REPO_NAME: ${{ github.event.repository.name }}
+
 # Run workflow on every push to the master branch
 on: 
   push: 
@@ -30,15 +36,11 @@ jobs:
 
     # publishes Blazor project to the release-folder
     - name: Publish .NET Core Project
-      run: dotnet publish BlazorPokedex.Wasm/BlazorPokedex.Wasm.csproj -c Release -o release --nologo
-    
-    # changes the base-tag in index.html from '/' to 'BlazorPokedex' to match GitHub Pages repository subdirectory
-    - name: Change base-tag in index.html from / to BlazorPokedex
-      run: sed -i 's/<base href="\/" \/>/<base href="\/BlazorPokedex\/" \/>/g' release/wwwroot/index.html
+      run: dotnet publish BlazorPokedex.Wasm/BlazorPokedex.Wasm.csproj -c Release -o $PUBLISH_FOLDER_OUTPUT --nologo
       
     # Fix integrity errors
     - name: Fix service-worker-assets.js hashes
-      working-directory: release/wwwroot
+      working-directory: $PUBLISH_FOLDER_OUTPUT/wwwroot
       run: |
         jsFile=$(<service-worker-assets.js)
         # remove JavaScript from contents so it can be interpreted as JSON
@@ -68,17 +70,32 @@ jobs:
 
         echo -n "$jsFile" > service-worker-assets.js
     
+    # Use NodeJS react-snap utitility to prerender static website
+    - name: prerender Blazor client
+      working-directory: $PUBLISH_FOLDER
+      run: npx react-snap
+      
+    # change base tag in all html files to include subfolder
+    - name: Change base tag
+      working-directory: Prerender/output/wwwroot
+      run: |
+        find . -name "*.html" | while read htmlFile; do
+            sed -i 's/<base href="\/"/<base href="\/$REPO_NAME\/"/g' $htmlFile
+            sed -i 's/<script type="text\/javascript">var Module; window.__wasmmodulecallback__(); delete window.__wasmmodulecallback__;<\/script><script src="_framework\/dotnet.5.0.1.js" defer="" integrity="sha256-SWZOE2EsCqc\/7dPgJrcFqUvVvdeJ9cipeZ2NFMC9v2s=" crossorigin="anonymous"><\/script>//g' $htmlFile
+        done
+    
+    
     # copy index.html to 404.html to serve the same file when a file is not found
-    - name: copy index.html to 404.html
-      run: cp release/wwwroot/index.html release/wwwroot/404.html
+    #- name: copy index.html to 404.html
+     # run: cp release/wwwroot/index.html release/wwwroot/404.html
 
     # add .nojekyll file to tell GitHub pages to not treat this as a Jekyll project. (Allow files and folders starting with an underscore)
     - name: Add .nojekyll file
-      run: touch release/wwwroot/.nojekyll
+      run: touch $PUBLISH_FOLDER_OUTPUT/wwwroot/.nojekyll
       
     - name: Commit wwwroot to GitHub Pages
       uses: JamesIves/github-pages-deploy-action@3.7.1
       with:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         BRANCH: gh-pages
-        FOLDER: release/wwwroot
+        FOLDER: $PUBLISH_FOLDER_OUTPUT/wwwroot
