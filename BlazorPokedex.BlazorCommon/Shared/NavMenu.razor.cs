@@ -27,6 +27,17 @@ public partial class NavMenu
         JSModule = await JsRuntime.InvokeAsync<IJSObjectReference>("import", "./" + Utils.GetStaticFileUrl("app.js"));
     }
 
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        await base.OnAfterRenderAsync(firstRender);
+
+        if (firstRender)
+        {
+            string jsPath = "./" + Utils.GetStaticFileUrl("app.js");
+            JSModule = await JsRuntime.InvokeAsync<IJSObjectReference>("import", jsPath);
+        }
+    }
+
     private async Task ToggleNavMenuAsync()
     {
         if (await JSModule.InvokeAsync<bool>("isCollapsed"))
