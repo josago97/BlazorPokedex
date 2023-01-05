@@ -23,11 +23,12 @@ jobs:
     - uses: actions/checkout@v2
     
     - name: prueba
-      run: touch prueba.txt
-      run: echo '<base href="\/" \/>' > prueba.txt
-      run: sed -i 's/<base href="\/" \/>/<base href="\/$REPO_NAME\/" \/>/g' prueba.txt
-      run: echo "Nombre projecto ASDASD/$REPO_NAME/ASDASD"
-      run: cat prueba.txt
+      run: |
+      touch prueba.txt
+      echo '<base href="\/" \/>' > prueba.txt
+      sed -i 's/<base href="\/" \/>/<base href="\/$REPO_NAME\/" \/>/g' prueba.txt
+      echo "Nombre projecto ASDASD/$REPO_NAME/ASDASD"
+      cat prueba.txt
     
     # sets up .NET SDK 7.0.101
     - name: Setup .NET Core SDK
