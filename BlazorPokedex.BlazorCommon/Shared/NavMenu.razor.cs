@@ -23,8 +23,6 @@ public partial class NavMenu
         await base.OnInitializedAsync();
 
         Generations = await PokeApi.GetGenerationsAsync();
-
-        JSModule = await JsRuntime.InvokeAsync<IJSObjectReference>("import", "./" + Utils.GetStaticFileUrl("app.js"));
     }
 
     protected override async Task OnAfterRenderAsync(bool firstRender)
