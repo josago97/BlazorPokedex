@@ -36,7 +36,7 @@ jobs:
       
     # changes the base-tag in index.html from '/' to '$REPO_NAME' to match GitHub Pages repository subdirectory
     - name: Change base-tag in index.html from / to $REPO_NAME
-      run: sed -i 's/<base href="\/" \/>/<base href="\/$REPO_NAME\/" \/>/g' release/wwwroot/index.html
+      run: sed -i 's/<base href="\/" \/>/<base href="\/${{ env.REPO_NAME }}\/" \/>/g' release/wwwroot/index.html
       
       
     # Fix integrity errors
