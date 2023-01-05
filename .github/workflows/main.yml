@@ -35,9 +35,17 @@ jobs:
       run: dotnet publish $PROJECT_NAME/$PROJECT_NAME.csproj -c Release -o release --nologo
       
     # changes the base-tag in index.html from '/' to '$REPO_NAME' to match GitHub Pages repository subdirectory
-    - name: Change base-tag in index.html from / to $REPO_NAME
-      run: sed -i 's/<base href="\/" \/>/<base href="\/${{ env.REPO_NAME }}\/" \/>/g' release/wwwroot/index.html
+    #- name: Change base-tag in index.html from / to $REPO_NAME
+     # run: sed -i 's/<base href="\/" \/>/<base href="\/${{ env.REPO_NAME }}\/" \/>/g' release/wwwroot/index.html
       
+       # change base tag in all html files to include subfolder
+    - name: Change base tag
+      working-directory: release/wwwroot
+      run: |
+        find . -name "*.html" | while read htmlFile; do
+            sed -i 's/<base href="\/"/<base href="\/${{ env.REPO_NAME }}\/"/g' $htmlFile
+        done
+    
       
     # Fix integrity errors
     - name: Fix service-worker-assets.js hashes
