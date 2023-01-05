@@ -22,8 +22,8 @@ jobs:
     # uses GitHub's checkout action to checkout code form the master branch
     - uses: actions/checkout@v2
     
-    #- name: Setup .NET Core CLI
-     # uses: baruchiro/github-actions@0.0.1
+    - name: prueba
+      run: echo "Nombre projecto ASDASD/$REPO_NAME/ASDASD"
     
     # sets up .NET SDK 7.0.101
     - name: Setup .NET Core SDK
