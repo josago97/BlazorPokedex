@@ -41,7 +41,7 @@ jobs:
       
     # Fix integrity errors
     - name: Fix service-worker-assets.js hashes
-      working-directory: Release/output/wwwroot
+      working-directory: $PUBLISH_FOLDER_OUTPUT/wwwroot
       run: |
         jsFile=$(<service-worker-assets.js)
         # remove JavaScript from contents so it can be interpreted as JSON
@@ -73,7 +73,7 @@ jobs:
     
     # Use NodeJS react-snap utitility to prerender static website
     - name: prerender Blazor client
-      working-directory: $PUBLISH_FOLDER
+      working-directory: $PUBLISH_FOLDER_OUTPUT
       run: npx react-snap
       
     # change base tag in all html files to include subfolder
