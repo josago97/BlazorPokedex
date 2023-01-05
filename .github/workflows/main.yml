@@ -40,7 +40,7 @@ jobs:
       
     # Fix integrity errors
     - name: Fix service-worker-assets.js hashes
-      working-directory: $PUBLISH_FOLDER_OUTPUT/wwwroot
+      working-directory: Release/output/wwwroot
       run: |
         jsFile=$(<service-worker-assets.js)
         # remove JavaScript from contents so it can be interpreted as JSON
@@ -77,7 +77,7 @@ jobs:
       
     # change base tag in all html files to include subfolder
     - name: Change base tag
-      working-directory: Prerender/output/wwwroot
+      working-directory: $PUBLISH_FOLDER_OUTPUT/wwwroot
       run: |
         find . -name "*.html" | while read htmlFile; do
             sed -i 's/<base href="\/"/<base href="\/$REPO_NAME\/"/g' $htmlFile
