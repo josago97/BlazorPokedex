@@ -7,9 +7,9 @@
   "linkerEnabled": true,
   "resources": {
     "assembly": {
-      "BlazorPokedex.BlazorCommon.dll": "sha256-xGtVXWEuyGeMmJ8TTxfB6FQfzeMLGso9DYX1WDXUqmU=",
+      "BlazorPokedex.BlazorCommon.dll": "sha256-7ZVO3StT37qdWhAgdfZ2anFObFR5BguUvsnLai2DePc=",
       "BlazorPokedex.Common.dll": "sha256-Uj3KmuUZdoUbNFUR04XU1FlomirhOj5oOwLvjiu2UVA=",
-      "BlazorPokedex.Wasm.dll": "sha256-zC6EEI6PQG4U2y+bs7DGODdjW9xRlUXfHhlOLgFC3EI=",
+      "BlazorPokedex.Wasm.dll": "sha256-lm0so9qu8BrWvmHCjEWHk2aYyG0qvBIiBHn+GY2WUug=",
       "Microsoft.AspNetCore.Components.dll": "sha256-MPS3CT8MOv2JWRyo4RADa50soZczML7svRCwuS170jo=",
       "Microsoft.AspNetCore.Components.Web.dll": "sha256-+B+Dw0exFpLLKnjfJM4i3\/oCk0S9vAPAWW4+uwMs5h8=",
       "Microsoft.AspNetCore.Components.WebAssembly.dll": "sha256-jj0gEWGz0IP5DtImmDS2JCnL7nDJvw39GXaOgt9q2BU=",
@@ -46,7 +46,7 @@
     "runtime": {
       "dotnet.7.0.1.7v8k5ol8h2.js": "sha256-Y\/6VCglo0Qs5X4uzF3hyyt17Zm4gXfq8e9BiMGLk1tY=",
       "dotnet.timezones.blat": "sha256-6Aw0ALXLw\/A0vGcC5uG5GnFafYpL\/iHHLo22LyOR+TA=",
-      "dotnet.wasm": "sha256-EImuHsV5NwHWpkRYmsZwYrttMFWoUfEPb4+VwFkJk54=",
+      "dotnet.wasm": "sha256-arOFY8bBkRunDKwreagQzbflM7PfZX6wW4JjnKVReNA=",
       "icudt_CJK.dat": "sha256-SZLtQnRc0JkwqHab0VUVP7T3uBPSeYzxzDnpxPpUnHk=",
       "icudt_EFIGS.dat": "sha256-l7NtS3cI+3VUoQ2XQvlzMb8x4Ow1BtnOJNLWc6bifW0=",
       "icudt_no_CJK.dat": "sha256-SNAStZO8ryN4gEbGzRYHea+b+VMpFMMNWXKTM3Y1gH4=",
@@ -55,7 +55,7 @@
     "runtimeAssets": {
       "dotnet.wasm": {
         "behavior": "dotnetwasm",
-        "hash": "sha256-EImuHsV5NwHWpkRYmsZwYrttMFWoUfEPb4+VwFkJk54="
+        "hash": "sha256-arOFY8bBkRunDKwreagQzbflM7PfZX6wW4JjnKVReNA="
       }
     },
     "satelliteResources": null
