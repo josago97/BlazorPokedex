@@ -65,7 +65,7 @@
       "url": "icon-512.png"
     },
     {
-      "hash": "sha256-x7q4iDgI6yXDqKfzBOnHiUzq/ZOaMBmm8fYbYbvuuF4=",
+      "hash": "sha256-SsxjMVCt5NBzMBAWKpOU4GbsfpKaWT0+a2g1Oxbmr+8=",
       "url": "index.html"
     },
     {
@@ -293,5 +293,5 @@
       "url": "_content\/BlazorPokedex.BlazorCommon\/images\/pokemon-title.png"
     }
   ],
-  "version": "1FbWynib"
+  "version": "a4+cUsAV"
 };
