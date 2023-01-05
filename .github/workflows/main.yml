@@ -27,7 +27,7 @@ jobs:
       run: |
         touch prueba.txt
         echo '<base href="\/" \/>' > prueba.txt
-        sed -i 's/<base href="\/" \/>/<base href="\/$REPO_NAME\/" \/>/g' prueba.txt
+        sed -i 's/<base href="\/" \/>/<base href="\/BlazorPokedex\/" \/>/g' prueba.txt
         echo "Nombre projecto ASDASD/$REPO_NAME/ASDASD"
         cat prueba.txt
     
