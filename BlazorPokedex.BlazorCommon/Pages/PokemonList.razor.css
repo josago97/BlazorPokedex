@@ -7,8 +7,6 @@
 
 .data-container {
     width: 100%;
-    container-name: container-size;
-    container-type: inline-size;
 }
 
 .pokemon-list {
@@ -57,8 +55,10 @@
 }
 
 @media (max-width: 499.98px) {
-    .pokemon-list {  
-        grid-template-columns: repeat(auto-fill, minmax(150px, auto));
+    .pokemon-list {
+        grid-template-columns: repeat(auto-fill, minmax(145px, auto));
+        gap: 4vw;
+        margin: 4vw;
     }
 
     /* Set max width to all items in the grid */
