@@ -69,7 +69,7 @@
       "url": "index.html"
     },
     {
-      "hash": "sha256-Lwpz3SRqHm6jxScTvmtwG1ZInWA7im022W\/\/TAhnflI=",
+      "hash": "sha256-f1bDFsRIC8B7zyG5FyjwmIpmod91lS8xZiaTVUnoDHA=",
       "url": "manifest.json"
     },
     {
@@ -3941,5 +3941,5 @@
       "url": "pokemon\/151\/index.html"
     }
   ],
-  "version": "M4ILTvEB"
+  "version": "LqX4SChZ"
 };
