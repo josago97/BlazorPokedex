@@ -237,7 +237,7 @@
       "url": "_framework\/dotnet.wasm"
     },
     {
-      "hash": "sha256-l7GHqy+BlK06MaV7SE794qffwjH6cTJI0LiizGX+jI0=",
+      "hash": "sha256-S6km3d4arVrY0y4sojcbhePFaD2FxSy4sKmMXxhbVAU=",
       "url": "_content\/BlazorPokedex.BlazorCommon\/BlazorPokedex.BlazorCommon.bundle.scp.css"
     },
     {
@@ -245,7 +245,7 @@
       "url": "_content\/BlazorPokedex.BlazorCommon\/app.js"
     },
     {
-      "hash": "sha256-bd\/c0KhpuRhkrl05jkRCYRyurhgaMlWLbDmR7jtSfO8=",
+      "hash": "sha256-TFuUI6xFWENEpoQKnsy60pkYpnKNljBiLD\/aTh6I1\/Q=",
       "url": "_content\/BlazorPokedex.BlazorCommon\/css\/app.css"
     },
     {
@@ -3941,5 +3941,5 @@
       "url": "pokemon\/151\/index.html"
     }
   ],
-  "version": "I4TqAHgL"
+  "version": "UcyMTBeg"
 };

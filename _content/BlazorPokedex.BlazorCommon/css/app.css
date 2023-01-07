@@ -57,7 +57,7 @@ h1, h2, h3, h4 {
 }
 
 .sidebar-extend {
-    height: 100vh;
+    height: 100dvh;
 }
 
 .navbar {

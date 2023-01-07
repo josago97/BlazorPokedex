@@ -132,9 +132,8 @@ div[b-dp48ejnp6b] {
     grid-template-columns: repeat(4, 200px);
     grid-auto-rows: auto;
     gap: 30px;
+    justify-items: center;
     justify-content: center;
-    align-content: center;
-    place-items: center;
     margin: 20px;
 }
 
@@ -162,26 +161,29 @@ div[b-dp48ejnp6b] {
 .type-list[b-6hjxm53cr1] {
     display: grid;
     margin-top: 5px;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-columns: repeat(2, 1fr);
     gap: 5px;
     justify-content: space-between;
 }
 
-@container container-size (width >= 490px) and (width < 920px) {
+@media (min-width: 500px) and (max-width: 1300px) {
     .pokemon-list[b-6hjxm53cr1] {
         grid-template-columns: repeat(auto-fill, 200px);
     }
 }
 
-@container container-size (width < 490px) {
-    .pokemon-list[b-6hjxm53cr1] {
-        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+@media (max-width: 499.98px) {
+    .pokemon-list[b-6hjxm53cr1] {  
+        grid-template-columns: repeat(auto-fill, minmax(150px, auto));
     }
 
-    /* Set max and min width to all items in the grid */
+    /* Set max width to all items in the grid */
     .pokemon-list > *[b-6hjxm53cr1] {
         max-width: 200px;
-        min-width: 150px;
+    }
+
+    .type-list[b-6hjxm53cr1] {
+        font-size: 0.8rem;
     }
 }
 /* _content/BlazorPokedex.BlazorCommon/Shared/MainLayout.razor.rz.scp.css */
