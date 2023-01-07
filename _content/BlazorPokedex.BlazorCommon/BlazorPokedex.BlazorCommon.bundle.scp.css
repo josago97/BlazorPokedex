@@ -123,8 +123,6 @@ div[b-dp48ejnp6b] {
 
 .data-container[b-6hjxm53cr1] {
     width: 100%;
-    container-name: container-size;
-    container-type: inline-size;
 }
 
 .pokemon-list[b-6hjxm53cr1] {
@@ -173,8 +171,10 @@ div[b-dp48ejnp6b] {
 }
 
 @media (max-width: 499.98px) {
-    .pokemon-list[b-6hjxm53cr1] {  
-        grid-template-columns: repeat(auto-fill, minmax(150px, auto));
+    .pokemon-list[b-6hjxm53cr1] {
+        grid-template-columns: repeat(auto-fill, minmax(145px, auto));
+        gap: 4vw;
+        margin: 4vw;
     }
 
     /* Set max width to all items in the grid */

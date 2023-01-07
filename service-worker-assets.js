@@ -237,7 +237,7 @@
       "url": "_framework\/dotnet.wasm"
     },
     {
-      "hash": "sha256-S6km3d4arVrY0y4sojcbhePFaD2FxSy4sKmMXxhbVAU=",
+      "hash": "sha256-V3uK+mpzCZhBjSD0\/EHVW9ucmeH3mI\/nRzQNzaq\/ubU=",
       "url": "_content\/BlazorPokedex.BlazorCommon\/BlazorPokedex.BlazorCommon.bundle.scp.css"
     },
     {
@@ -3941,5 +3941,5 @@
       "url": "pokemon\/151\/index.html"
     }
   ],
-  "version": "UcyMTBeg"
+  "version": "M4ILTvEB"
 };
