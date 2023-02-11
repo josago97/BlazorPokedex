@@ -114,8 +114,10 @@ h1, h2, h3, h4 {
 /*=======================================*/
 
 .list-item {
+    --shadow-size: 10px;
+
     background: white;
-    box-shadow: 0px 0px 10px black;
+    box-shadow: 0px 0px var(--shadow-size) black;
     border-radius: 25px;
 }
 
@@ -125,6 +127,20 @@ h1, h2, h3, h4 {
 }
 
 .list-item:hover {
+    position: relative;
+    box-shadow: none;
     cursor: pointer;
-    background: linear-gradient(45deg, #ff00aa 0%, #00ccff 25%, #00ff00 50%, #ffbb00 75%, #ff0000 100%) !important;
+}
+
+.list-item:hover::before {
+    content: "";
+    position: absolute;
+    background: linear-gradient(45deg, #ff00aa 0%, #00ccff 25%, #00ff00 50%, #ffbb00 75%, #ff0000 100%);
+    width: calc(100% + var(--shadow-size));
+    height: calc(100% + var(--shadow-size));
+    top: calc(var(--shadow-size) / -2);
+    left: calc(var(--shadow-size) / -2);
+    border-radius: inherit;
+    z-index: -1;
+    filter: blur(calc(var(--shadow-size) / 2));
 }
