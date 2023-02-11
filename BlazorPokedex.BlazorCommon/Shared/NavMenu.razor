@@ -14,7 +14,7 @@
                 @foreach (var generation in Generations)
                 {
                     <a class="generation-item list-item" href=@($"generation/{generation.Id}")>
-                        @($"Generation {generation.Id}")
+                        <div><OrdinalNumber Number="@generation.Id"/> Generation</div>
                         <div class="image"><img src=@Utils.GetStaticFileUrl($"images/gen{generation.Id}.png") /></div>
                     </a> 
                 }

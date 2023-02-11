@@ -1,5 +1,4 @@
 ﻿@page "/generation/{Generation:int}"
-@using BlazorPokedex.BlazorCommon.Components
 
 @if (Pokemons == null)
 {
@@ -7,7 +6,7 @@
 }
 else
 {
-    <div class="title">Generation @Generation</div>
+    <div class="title"><OrdinalNumber Number="@Generation"/> Generation</div>
 
     <div class="data-container">
         <div class="pokemon-list">

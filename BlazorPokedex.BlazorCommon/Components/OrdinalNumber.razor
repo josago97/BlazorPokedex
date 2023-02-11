@@ -1,0 +1,14 @@
+﻿<span>@Number<sup>@Index</sup></span>
+
+@code {
+    [Parameter]
+    public int Number { get; set; }
+
+    private string Index => Number switch
+    {
+        1 => "st",
+        2 => "nd",
+        3 => "rd",
+        _ => "th"
+    };
+}

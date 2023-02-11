@@ -11,7 +11,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorPokedex.BlazorCommon"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorPokedex.DataExtractor", "BlazorPokedex.DataExtractor\BlazorPokedex.DataExtractor.csproj", "{3644155F-F0F3-4093-8D7D-398FCF0B3DBD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorPokedex.Wasm", "BlazorPokedex.Wasm\BlazorPokedex.Wasm.csproj", "{64E3A4ED-F869-4603-8F33-AD5BEE264E1F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorPokedex.Wasm", "BlazorPokedex.Wasm\BlazorPokedex.Wasm.csproj", "{64E3A4ED-F869-4603-8F33-AD5BEE264E1F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
