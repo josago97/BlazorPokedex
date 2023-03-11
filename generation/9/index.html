@@ -1,0 +1,375 @@
+<!DOCTYPE html><html lang="en"><head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <title>Pokedex</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico"/>
+    <base href="/BlazorPokedex/"/>
+    <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet"/>
+    <link href="BlazorPokedex.Wasm.styles.css" rel="stylesheet"/>
+    <link href="css/app.css" rel="stylesheet"/>
+    <link href="_content/BlazorPokedex.BlazorCommon/css/app.css" rel="stylesheet"/>
+    <link href="manifest.json" rel="manifest"/>
+    <link rel="apple-touch-icon" sizes="512x512" href="icon-512.png"/>
+    <link rel="apple-touch-icon" sizes="192x192" href="icon-192.png"/>
+
+<!-- %%-PRERENDERING-HEADOUTLET-BEGIN-%% -->
+
+<!-- %%-PRERENDERING-HEADOUTLET-END-%% -->
+<script src="data:text/javascript;base64,KGZ1bmN0aW9uKG4sdCxpKXtmb3IodmFyIGY9bi5jcmVhdGVOb2RlSXRlcmF0b3IobiwxMjgpLHIsZSx1O2YubmV4dE5vZGUoKTspaWYocj1mLnJlZmVyZW5jZU5vZGUsdC50ZXN0KHIudGV4dENvbnRlbnQudHJpbSgpKSl7d2hpbGUoaT1yLm5leHRTaWJsaW5nKWlmKGU9aS50ZXh0Q29udGVudC50cmltKCksaS5yZW1vdmUoKSx0LnRlc3QoZSkpYnJlYWs7ci5yZW1vdmUoKTticmVha311PUFycmF5LmZyb20obi5xdWVyeVNlbGVjdG9yQWxsKCJzY3JpcHQiKSkucG9wKCk7dSYmdS5yZW1vdmUoKX0pKGRvY3VtZW50LC9eJSUtUFJFUkVOREVSSU5HLUhFQURPVVRMRVQtKEJFR0lOfEVORCktJSUkLyk7"></script></head>
+
+<body>
+    <div id="app">
+        <div class="loading-container">
+            <h2>Loading...</h2>
+            <img class="loading-pokeball" src="_content/BlazorPokedex.BlazorCommon/images/pokeball.png"/>
+        </div>
+    
+<!-- %%-PRERENDERING-BEGIN-%% -->
+<div style="opacity: 0; position: fixed; z-index: -1; top: 0; left: 0; bottom: 0; right: 0;">
+    <div class="page" b-wl8iwliv3a><div class="sidebar sidebar-collapse" b-wq1fb3lmsz><div class="navbar" b-wq1fb3lmsz><img src="_content/BlazorPokedex.BlazorCommon/images/pokemon-title.png" b-wq1fb3lmsz />
+        <button title="Navigation menu" class="navbar-toggler" b-wq1fb3lmsz><span class="oi oi-menu navbar-toggler-icon" aria-hidden="true" b-wq1fb3lmsz></span></button></div>
+
+    <div class="collapse" b-wq1fb3lmsz><div class="nav-list" b-wq1fb3lmsz><a class="generation-item list-item" href="generation/1" b-wq1fb3lmsz><div b-wq1fb3lmsz><span>1<sup>st</sup></span> Generation</div>
+                        <div class="image" b-wq1fb3lmsz><img src="_content/BlazorPokedex.BlazorCommon/images/gen1.png" b-wq1fb3lmsz /></div></a><a class="generation-item list-item" href="generation/2" b-wq1fb3lmsz><div b-wq1fb3lmsz><span>2<sup>nd</sup></span> Generation</div>
+                        <div class="image" b-wq1fb3lmsz><img src="_content/BlazorPokedex.BlazorCommon/images/gen2.png" b-wq1fb3lmsz /></div></a><a class="generation-item list-item" href="generation/3" b-wq1fb3lmsz><div b-wq1fb3lmsz><span>3<sup>rd</sup></span> Generation</div>
+                        <div class="image" b-wq1fb3lmsz><img src="_content/BlazorPokedex.BlazorCommon/images/gen3.png" b-wq1fb3lmsz /></div></a><a class="generation-item list-item" href="generation/4" b-wq1fb3lmsz><div b-wq1fb3lmsz><span>4<sup>th</sup></span> Generation</div>
+                        <div class="image" b-wq1fb3lmsz><img src="_content/BlazorPokedex.BlazorCommon/images/gen4.png" b-wq1fb3lmsz /></div></a><a class="generation-item list-item" href="generation/5" b-wq1fb3lmsz><div b-wq1fb3lmsz><span>5<sup>th</sup></span> Generation</div>
+                        <div class="image" b-wq1fb3lmsz><img src="_content/BlazorPokedex.BlazorCommon/images/gen5.png" b-wq1fb3lmsz /></div></a><a class="generation-item list-item" href="generation/6" b-wq1fb3lmsz><div b-wq1fb3lmsz><span>6<sup>th</sup></span> Generation</div>
+                        <div class="image" b-wq1fb3lmsz><img src="_content/BlazorPokedex.BlazorCommon/images/gen6.png" b-wq1fb3lmsz /></div></a><a class="generation-item list-item" href="generation/7" b-wq1fb3lmsz><div b-wq1fb3lmsz><span>7<sup>th</sup></span> Generation</div>
+                        <div class="image" b-wq1fb3lmsz><img src="_content/BlazorPokedex.BlazorCommon/images/gen7.png" b-wq1fb3lmsz /></div></a><a class="generation-item list-item" href="generation/8" b-wq1fb3lmsz><div b-wq1fb3lmsz><span>8<sup>th</sup></span> Generation</div>
+                        <div class="image" b-wq1fb3lmsz><img src="_content/BlazorPokedex.BlazorCommon/images/gen8.png" b-wq1fb3lmsz /></div></a><a class="generation-item list-item" href="generation/9" b-wq1fb3lmsz><div b-wq1fb3lmsz><span>9<sup>th</sup></span> Generation</div>
+                        <div class="image" b-wq1fb3lmsz><img src="_content/BlazorPokedex.BlazorCommon/images/gen9.png" b-wq1fb3lmsz /></div></a></div></div></div>
+
+	<main b-wl8iwliv3a><div class="title" b-6hjxm53cr1><span>9<sup>th</sup></span> Generation</div><div class="data-container" b-6hjxm53cr1><div class="pokemon-list" b-6hjxm53cr1><div class="pokemon-item list-item" b-6hjxm53cr1><a href="pokemon/906" b-6hjxm53cr1><div class="image" b-6hjxm53cr1><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/906.png" b-6hjxm53cr1 /></div>
+                        <div class="number" b-6hjxm53cr1>N&#xBA; 906</div>
+                        <div class="name" b-6hjxm53cr1>Sprigatito</div>
+                        <div class="type-list" b-6hjxm53cr1><div style="background-color: #3DA224" b-dp48ejnp6b>Grass</div></div></a></div><div class="pokemon-item list-item" b-6hjxm53cr1><a href="pokemon/907" b-6hjxm53cr1><div class="image" b-6hjxm53cr1><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/907.png" b-6hjxm53cr1 /></div>
+                        <div class="number" b-6hjxm53cr1>N&#xBA; 907</div>
+                        <div class="name" b-6hjxm53cr1>Floragato</div>
+                        <div class="type-list" b-6hjxm53cr1><div style="background-color: #3DA224" b-dp48ejnp6b>Grass</div></div></a></div><div class="pokemon-item list-item" b-6hjxm53cr1><a href="pokemon/908" b-6hjxm53cr1><div class="image" b-6hjxm53cr1><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/908.png" b-6hjxm53cr1 /></div>
+                        <div class="number" b-6hjxm53cr1>N&#xBA; 908</div>
+                        <div class="name" b-6hjxm53cr1>Meowscarada</div>
+                        <div class="type-list" b-6hjxm53cr1><div style="background-color: #3DA224" b-dp48ejnp6b>Grass</div><div style="background-color: #4F3F3D" b-dp48ejnp6b>Dark</div></div></a></div><div class="pokemon-item list-item" b-6hjxm53cr1><a href="pokemon/909" b-6hjxm53cr1><div class="image" b-6hjxm53cr1><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/909.png" b-6hjxm53cr1 /></div>
+                        <div class="number" b-6hjxm53cr1>N&#xBA; 909</div>
+                        <div class="name" b-6hjxm53cr1>Fuecoco</div>
+                        <div class="type-list" b-6hjxm53cr1><div style="background-color: #E72324" b-dp48ejnp6b>Fire</div></div></a></div><div class="pokemon-item list-item" b-6hjxm53cr1><a href="pokemon/910" b-6hjxm53cr1><div class="image" b-6hjxm53cr1><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/910.png" b-6hjxm53cr1 /></div>
+                        <div class="number" b-6hjxm53cr1>N&#xBA; 910</div>
+                        <div class="name" b-6hjxm53cr1>Crocalor</div>
+                        <div class="type-list" b-6hjxm53cr1><div style="background-color: #E72324" b-dp48ejnp6b>Fire</div></div></a></div><div class="pokemon-item list-item" b-6hjxm53cr1><a href="pokemon/911" b-6hjxm53cr1><div class="image" b-6hjxm53cr1><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/911.png" b-6hjxm53cr1 /></div>
+                        <div class="number" b-6hjxm53cr1>N&#xBA; 911</div>
+                        <div class="name" b-6hjxm53cr1>Skeledirge</div>
+                        <div class="type-list" b-6hjxm53cr1><div style="background-color: #E72324" b-dp48ejnp6b>Fire</div><div style="background-color: #713F71" b-dp48ejnp6b>Ghost</div></div></a></div><div class="pokemon-item list-item" b-6hjxm53cr1><a href="pokemon/912" b-6hjxm53cr1><div class="image" b-6hjxm53cr1><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/912.png" b-6hjxm53cr1 /></div>
+                        <div class="number" b-6hjxm53cr1>N&#xBA; 912</div>
+                        <div class="name" b-6hjxm53cr1>Quaxly</div>
+                        <div class="type-list" b-6hjxm53cr1><div style="background-color: #2481EF" b-dp48ejnp6b>Water</div></div></a></div><div class="pokemon-item list-item" b-6hjxm53cr1><a href="pokemon/913" b-6hjxm53cr1><div class="image" b-6hjxm53cr1><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/913.png" b-6hjxm53cr1 /></div>
+                        <div class="number" b-6hjxm53cr1>N&#xBA; 913</div>
+                        <div class="name" b-6hjxm53cr1>Quaxwell</div>
+                        <div class="type-list" b-6hjxm53cr1><div style="background-color: #2481EF" b-dp48ejnp6b>Water</div></div></a></div><div class="pokemon-item list-item" b-6hjxm53cr1><a href="pokemon/914" b-6hjxm53cr1><div class="image" b-6hjxm53cr1><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/914.png" b-6hjxm53cr1 /></div>
+                        <div class="number" b-6hjxm53cr1>N&#xBA; 914</div>
+                        <div class="name" b-6hjxm53cr1>Quaquaval</div>
+                        <div class="type-list" b-6hjxm53cr1><div style="background-color: #2481EF" b-dp48ejnp6b>Water</div><div style="background-color: #FF8100" b-dp48ejnp6b>Fighting</div></div></a></div><div class="pokemon-item list-item" b-6hjxm53cr1><a href="pokemon/915" b-6hjxm53cr1><div class="image" b-6hjxm53cr1><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/915.png" b-6hjxm53cr1 /></div>
+                        <div class="number" b-6hjxm53cr1>N&#xBA; 915</div>
+                        <div class="name" b-6hjxm53cr1>Lechonk</div>
+                        <div class="type-list" b-6hjxm53cr1><div style="background-color: #A0A2A0" b-dp48ejnp6b>Normal</div></div></a></div><div class="pokemon-item list-item" b-6hjxm53cr1><a href="pokemon/916" b-6hjxm53cr1><div class="image" b-6hjxm53cr1><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/916.png" b-6hjxm53cr1 /></div>
+                        <div class="number" b-6hjxm53cr1>N&#xBA; 916</div>
+                        <div class="name" b-6hjxm53cr1>Oinkologne</div>
+                        <div class="type-list" b-6hjxm53cr1><div style="background-color: #A0A2A0" b-dp48ejnp6b>Normal</div></div></a></div><div class="pokemon-item list-item" b-6hjxm53cr1><a href="pokemon/917" b-6hjxm53cr1><div class="image" b-6hjxm53cr1><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/917.png" b-6hjxm53cr1 /></div>
+                        <div class="number" b-6hjxm53cr1>N&#xBA; 917</div>
+                        <div class="name" b-6hjxm53cr1>Tarountula</div>
+                        <div class="type-list" b-6hjxm53cr1><div style="background-color: #92A212" b-dp48ejnp6b>Bug</div></div></a></div><div class="pokemon-item list-item" b-6hjxm53cr1><a href="pokemon/918" b-6hjxm53cr1><div class="image" b-6hjxm53cr1><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/918.png" b-6hjxm53cr1 /></div>
+                        <div class="number" b-6hjxm53cr1>N&#xBA; 918</div>
+                        <div class="name" b-6hjxm53cr1>Spidops</div>
+                        <div class="type-list" b-6hjxm53cr1><div style="background-color: #92A212" b-dp48ejnp6b>Bug</div></div></a></div><div class="pokemon-item list-item" b-6hjxm53cr1><a href="pokemon/919" b-6hjxm53cr1><div class="image" b-6hjxm53cr1><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/919.png" b-6hjxm53cr1 /></div>
+                        <div class="number" b-6hjxm53cr1>N&#xBA; 919</div>
+                        <div class="name" b-6hjxm53cr1>Nymble</div>
+                        <div class="type-list" b-6hjxm53cr1><div style="background-color: #92A212" b-dp48ejnp6b>Bug</div></div></a></div><div class="pokemon-item list-item" b-6hjxm53cr1><a href="pokemon/920" b-6hjxm53cr1><div class="image" b-6hjxm53cr1><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/920.png" b-6hjxm53cr1 /></div>
+                        <div class="number" b-6hjxm53cr1>N&#xBA; 920</div>
+                        <div class="name" b-6hjxm53cr1>Lokix</div>
+                        <div class="type-list" b-6hjxm53cr1><div style="background-color: #92A212" b-dp48ejnp6b>Bug</div><div style="background-color: #4F3F3D" b-dp48ejnp6b>Dark</div></div></a></div><div class="pokemon-item list-item" b-6hjxm53cr1><a href="pokemon/921" b-6hjxm53cr1><div class="image" b-6hjxm53cr1><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/921.png" b-6hjxm53cr1 /></div>
+                        <div class="number" b-6hjxm53cr1>N&#xBA; 921</div>
+                        <div class="name" b-6hjxm53cr1>Pawmi</div>
+                        <div class="type-list" b-6hjxm53cr1><div style="background-color: #FAC100" b-dp48ejnp6b>Electric</div></div></a></div><div class="pokemon-item list-item" b-6hjxm53cr1><a href="pokemon/922" b-6hjxm53cr1><div class="image" b-6hjxm53cr1><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/922.png" b-6hjxm53cr1 /></div>
+                        <div class="number" b-6hjxm53cr1>N&#xBA; 922</div>
+                        <div class="name" b-6hjxm53cr1>Pawmo</div>
+                        <div class="type-list" b-6hjxm53cr1><div style="background-color: #FAC100" b-dp48ejnp6b>Electric</div><div style="background-color: #FF8100" b-dp48ejnp6b>Fighting</div></div></a></div><div class="pokemon-item list-item" b-6hjxm53cr1><a href="pokemon/923" b-6hjxm53cr1><div class="image" b-6hjxm53cr1><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/923.png" b-6hjxm53cr1 /></div>
+                        <div class="number" b-6hjxm53cr1>N&#xBA; 923</div>
+                        <div class="name" b-6hjxm53cr1>Pawmot</div>
+                        <div class="type-list" b-6hjxm53cr1><div style="background-color: #FAC100" b-dp48ejnp6b>Electric</div><div style="background-color: #FF8100" b-dp48ejnp6b>Fighting</div></div></a></div><div class="pokemon-item list-item" b-6hjxm53cr1><a href="pokemon/924" b-6hjxm53cr1><div class="image" b-6hjxm53cr1><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/924.png" b-6hjxm53cr1 /></div>
+                        <div class="number" b-6hjxm53cr1>N&#xBA; 924</div>
+                        <div class="name" b-6hjxm53cr1>Tandemaus</div>
+                        <div class="type-list" b-6hjxm53cr1><div style="background-color: #A0A2A0" b-dp48ejnp6b>Normal</div></div></a></div><div class="pokemon-item list-item" b-6hjxm53cr1><a href="pokemon/925" b-6hjxm53cr1><div class="image" b-6hjxm53cr1><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/925.png" b-6hjxm53cr1 /></div>
+                        <div class="number" b-6hjxm53cr1>N&#xBA; 925</div>
+                        <div class="name" b-6hjxm53cr1>Maushold</div>
+                        <div class="type-list" b-6hjxm53cr1><div style="background-color: #A0A2A0" b-dp48ejnp6b>Normal</div></div></a></div><div class="pokemon-item list-item" b-6hjxm53cr1><a href="pokemon/926" b-6hjxm53cr1><div class="image" b-6hjxm53cr1><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/926.png" b-6hjxm53cr1 /></div>
+                        <div class="number" b-6hjxm53cr1>N&#xBA; 926</div>
+                        <div class="name" b-6hjxm53cr1>Fidough</div>
+                        <div class="type-list" b-6hjxm53cr1><div style="background-color: #EF71EF" b-dp48ejnp6b>Fairy</div></div></a></div><div class="pokemon-item list-item" b-6hjxm53cr1><a href="pokemon/927" b-6hjxm53cr1><div class="image" b-6hjxm53cr1><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/927.png" b-6hjxm53cr1 /></div>
+                        <div class="number" b-6hjxm53cr1>N&#xBA; 927</div>
+                        <div class="name" b-6hjxm53cr1>Dachsbun</div>
+                        <div class="type-list" b-6hjxm53cr1><div style="background-color: #EF71EF" b-dp48ejnp6b>Fairy</div></div></a></div><div class="pokemon-item list-item" b-6hjxm53cr1><a href="pokemon/928" b-6hjxm53cr1><div class="image" b-6hjxm53cr1><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/928.png" b-6hjxm53cr1 /></div>
+                        <div class="number" b-6hjxm53cr1>N&#xBA; 928</div>
+                        <div class="name" b-6hjxm53cr1>Smoliv</div>
+                        <div class="type-list" b-6hjxm53cr1><div style="background-color: #3DA224" b-dp48ejnp6b>Grass</div><div style="background-color: #A0A2A0" b-dp48ejnp6b>Normal</div></div></a></div><div class="pokemon-item list-item" b-6hjxm53cr1><a href="pokemon/929" b-6hjxm53cr1><div class="image" b-6hjxm53cr1><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/929.png" b-6hjxm53cr1 /></div>
+                        <div class="number" b-6hjxm53cr1>N&#xBA; 929</div>
+                        <div class="name" b-6hjxm53cr1>Dolliv</div>
+                        <div class="type-list" b-6hjxm53cr1><div style="background-color: #3DA224" b-dp48ejnp6b>Grass</div><div style="background-color: #A0A2A0" b-dp48ejnp6b>Normal</div></div></a></div><div class="pokemon-item list-item" b-6hjxm53cr1><a href="pokemon/930" b-6hjxm53cr1><div class="image" b-6hjxm53cr1><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/930.png" b-6hjxm53cr1 /></div>
+                        <div class="number" b-6hjxm53cr1>N&#xBA; 930</div>
+                        <div class="name" b-6hjxm53cr1>Arboliva</div>
+                        <div class="type-list" b-6hjxm53cr1><div style="background-color: #3DA224" b-dp48ejnp6b>Grass</div><div style="background-color: #A0A2A0" b-dp48ejnp6b>Normal</div></div></a></div><div class="pokemon-item list-item" b-6hjxm53cr1><a href="pokemon/931" b-6hjxm53cr1><div class="image" b-6hjxm53cr1><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/931.png" b-6hjxm53cr1 /></div>
+                        <div class="number" b-6hjxm53cr1>N&#xBA; 931</div>
+                        <div class="name" b-6hjxm53cr1>Squawkabilly</div>
+                        <div class="type-list" b-6hjxm53cr1><div style="background-color: #A0A2A0" b-dp48ejnp6b>Normal</div><div style="background-color: #82BAEF" b-dp48ejnp6b>Flying</div></div></a></div><div class="pokemon-item list-item" b-6hjxm53cr1><a href="pokemon/932" b-6hjxm53cr1><div class="image" b-6hjxm53cr1><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/932.png" b-6hjxm53cr1 /></div>
+                        <div class="number" b-6hjxm53cr1>N&#xBA; 932</div>
+                        <div class="name" b-6hjxm53cr1>Nacli</div>
+                        <div class="type-list" b-6hjxm53cr1><div style="background-color: #B0AB82" b-dp48ejnp6b>Rock</div></div></a></div><div class="pokemon-item list-item" b-6hjxm53cr1><a href="pokemon/933" b-6hjxm53cr1><div class="image" b-6hjxm53cr1><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/933.png" b-6hjxm53cr1 /></div>
+                        <div class="number" b-6hjxm53cr1>N&#xBA; 933</div>
+                        <div class="name" b-6hjxm53cr1>Naclstack</div>
+                        <div class="type-list" b-6hjxm53cr1><div style="background-color: #B0AB82" b-dp48ejnp6b>Rock</div></div></a></div><div class="pokemon-item list-item" b-6hjxm53cr1><a href="pokemon/934" b-6hjxm53cr1><div class="image" b-6hjxm53cr1><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/934.png" b-6hjxm53cr1 /></div>
+                        <div class="number" b-6hjxm53cr1>N&#xBA; 934</div>
+                        <div class="name" b-6hjxm53cr1>Garganacl</div>
+                        <div class="type-list" b-6hjxm53cr1><div style="background-color: #B0AB82" b-dp48ejnp6b>Rock</div></div></a></div><div class="pokemon-item list-item" b-6hjxm53cr1><a href="pokemon/935" b-6hjxm53cr1><div class="image" b-6hjxm53cr1><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/935.png" b-6hjxm53cr1 /></div>
+                        <div class="number" b-6hjxm53cr1>N&#xBA; 935</div>
+                        <div class="name" b-6hjxm53cr1>Charcadet</div>
+                        <div class="type-list" b-6hjxm53cr1><div style="background-color: #E72324" b-dp48ejnp6b>Fire</div></div></a></div><div class="pokemon-item list-item" b-6hjxm53cr1><a href="pokemon/936" b-6hjxm53cr1><div class="image" b-6hjxm53cr1><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/936.png" b-6hjxm53cr1 /></div>
+                        <div class="number" b-6hjxm53cr1>N&#xBA; 936</div>
+                        <div class="name" b-6hjxm53cr1>Armarouge</div>
+                        <div class="type-list" b-6hjxm53cr1><div style="background-color: #E72324" b-dp48ejnp6b>Fire</div><div style="background-color: #EF3F7A" b-dp48ejnp6b>Psychic</div></div></a></div><div class="pokemon-item list-item" b-6hjxm53cr1><a href="pokemon/937" b-6hjxm53cr1><div class="image" b-6hjxm53cr1><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/937.png" b-6hjxm53cr1 /></div>
+                        <div class="number" b-6hjxm53cr1>N&#xBA; 937</div>
+                        <div class="name" b-6hjxm53cr1>Ceruledge</div>
+                        <div class="type-list" b-6hjxm53cr1><div style="background-color: #E72324" b-dp48ejnp6b>Fire</div><div style="background-color: #713F71" b-dp48ejnp6b>Ghost</div></div></a></div><div class="pokemon-item list-item" b-6hjxm53cr1><a href="pokemon/938" b-6hjxm53cr1><div class="image" b-6hjxm53cr1><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/938.png" b-6hjxm53cr1 /></div>
+                        <div class="number" b-6hjxm53cr1>N&#xBA; 938</div>
+                        <div class="name" b-6hjxm53cr1>Tadbulb</div>
+                        <div class="type-list" b-6hjxm53cr1><div style="background-color: #FAC100" b-dp48ejnp6b>Electric</div></div></a></div><div class="pokemon-item list-item" b-6hjxm53cr1><a href="pokemon/939" b-6hjxm53cr1><div class="image" b-6hjxm53cr1><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/939.png" b-6hjxm53cr1 /></div>
+                        <div class="number" b-6hjxm53cr1>N&#xBA; 939</div>
+                        <div class="name" b-6hjxm53cr1>Bellibolt</div>
+                        <div class="type-list" b-6hjxm53cr1><div style="background-color: #FAC100" b-dp48ejnp6b>Electric</div></div></a></div><div class="pokemon-item list-item" b-6hjxm53cr1><a href="pokemon/940" b-6hjxm53cr1><div class="image" b-6hjxm53cr1><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/940.png" b-6hjxm53cr1 /></div>
+                        <div class="number" b-6hjxm53cr1>N&#xBA; 940</div>
+                        <div class="name" b-6hjxm53cr1>Wattrel</div>
+                        <div class="type-list" b-6hjxm53cr1><div style="background-color: #FAC100" b-dp48ejnp6b>Electric</div><div style="background-color: #82BAEF" b-dp48ejnp6b>Flying</div></div></a></div><div class="pokemon-item list-item" b-6hjxm53cr1><a href="pokemon/941" b-6hjxm53cr1><div class="image" b-6hjxm53cr1><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/941.png" b-6hjxm53cr1 /></div>
+                        <div class="number" b-6hjxm53cr1>N&#xBA; 941</div>
+                        <div class="name" b-6hjxm53cr1>Kilowattrel</div>
+                        <div class="type-list" b-6hjxm53cr1><div style="background-color: #FAC100" b-dp48ejnp6b>Electric</div><div style="background-color: #82BAEF" b-dp48ejnp6b>Flying</div></div></a></div><div class="pokemon-item list-item" b-6hjxm53cr1><a href="pokemon/942" b-6hjxm53cr1><div class="image" b-6hjxm53cr1><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/942.png" b-6hjxm53cr1 /></div>
+                        <div class="number" b-6hjxm53cr1>N&#xBA; 942</div>
+                        <div class="name" b-6hjxm53cr1>Maschiff</div>
+                        <div class="type-list" b-6hjxm53cr1><div style="background-color: #4F3F3D" b-dp48ejnp6b>Dark</div></div></a></div><div class="pokemon-item list-item" b-6hjxm53cr1><a href="pokemon/943" b-6hjxm53cr1><div class="image" b-6hjxm53cr1><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/943.png" b-6hjxm53cr1 /></div>
+                        <div class="number" b-6hjxm53cr1>N&#xBA; 943</div>
+                        <div class="name" b-6hjxm53cr1>Mabosstiff</div>
+                        <div class="type-list" b-6hjxm53cr1><div style="background-color: #4F3F3D" b-dp48ejnp6b>Dark</div></div></a></div><div class="pokemon-item list-item" b-6hjxm53cr1><a href="pokemon/944" b-6hjxm53cr1><div class="image" b-6hjxm53cr1><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/944.png" b-6hjxm53cr1 /></div>
+                        <div class="number" b-6hjxm53cr1>N&#xBA; 944</div>
+                        <div class="name" b-6hjxm53cr1>Shroodle</div>
+                        <div class="type-list" b-6hjxm53cr1><div style="background-color: #923FCC" b-dp48ejnp6b>Poison</div><div style="background-color: #A0A2A0" b-dp48ejnp6b>Normal</div></div></a></div><div class="pokemon-item list-item" b-6hjxm53cr1><a href="pokemon/945" b-6hjxm53cr1><div class="image" b-6hjxm53cr1><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/945.png" b-6hjxm53cr1 /></div>
+                        <div class="number" b-6hjxm53cr1>N&#xBA; 945</div>
+                        <div class="name" b-6hjxm53cr1>Grafaiai</div>
+                        <div class="type-list" b-6hjxm53cr1><div style="background-color: #923FCC" b-dp48ejnp6b>Poison</div><div style="background-color: #A0A2A0" b-dp48ejnp6b>Normal</div></div></a></div><div class="pokemon-item list-item" b-6hjxm53cr1><a href="pokemon/946" b-6hjxm53cr1><div class="image" b-6hjxm53cr1><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/946.png" b-6hjxm53cr1 /></div>
+                        <div class="number" b-6hjxm53cr1>N&#xBA; 946</div>
+                        <div class="name" b-6hjxm53cr1>Bramblin</div>
+                        <div class="type-list" b-6hjxm53cr1><div style="background-color: #3DA224" b-dp48ejnp6b>Grass</div><div style="background-color: #713F71" b-dp48ejnp6b>Ghost</div></div></a></div><div class="pokemon-item list-item" b-6hjxm53cr1><a href="pokemon/947" b-6hjxm53cr1><div class="image" b-6hjxm53cr1><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/947.png" b-6hjxm53cr1 /></div>
+                        <div class="number" b-6hjxm53cr1>N&#xBA; 947</div>
+                        <div class="name" b-6hjxm53cr1>Brambleghast</div>
+                        <div class="type-list" b-6hjxm53cr1><div style="background-color: #3DA224" b-dp48ejnp6b>Grass</div><div style="background-color: #713F71" b-dp48ejnp6b>Ghost</div></div></a></div><div class="pokemon-item list-item" b-6hjxm53cr1><a href="pokemon/948" b-6hjxm53cr1><div class="image" b-6hjxm53cr1><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/948.png" b-6hjxm53cr1 /></div>
+                        <div class="number" b-6hjxm53cr1>N&#xBA; 948</div>
+                        <div class="name" b-6hjxm53cr1>Toedscool</div>
+                        <div class="type-list" b-6hjxm53cr1><div style="background-color: #92501B" b-dp48ejnp6b>Ground</div><div style="background-color: #3DA224" b-dp48ejnp6b>Grass</div></div></a></div><div class="pokemon-item list-item" b-6hjxm53cr1><a href="pokemon/949" b-6hjxm53cr1><div class="image" b-6hjxm53cr1><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/949.png" b-6hjxm53cr1 /></div>
+                        <div class="number" b-6hjxm53cr1>N&#xBA; 949</div>
+                        <div class="name" b-6hjxm53cr1>Toedscruel</div>
+                        <div class="type-list" b-6hjxm53cr1><div style="background-color: #92501B" b-dp48ejnp6b>Ground</div><div style="background-color: #3DA224" b-dp48ejnp6b>Grass</div></div></a></div><div class="pokemon-item list-item" b-6hjxm53cr1><a href="pokemon/950" b-6hjxm53cr1><div class="image" b-6hjxm53cr1><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/950.png" b-6hjxm53cr1 /></div>
+                        <div class="number" b-6hjxm53cr1>N&#xBA; 950</div>
+                        <div class="name" b-6hjxm53cr1>Klawf</div>
+                        <div class="type-list" b-6hjxm53cr1><div style="background-color: #B0AB82" b-dp48ejnp6b>Rock</div></div></a></div><div class="pokemon-item list-item" b-6hjxm53cr1><a href="pokemon/951" b-6hjxm53cr1><div class="image" b-6hjxm53cr1><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/951.png" b-6hjxm53cr1 /></div>
+                        <div class="number" b-6hjxm53cr1>N&#xBA; 951</div>
+                        <div class="name" b-6hjxm53cr1>Capsakid</div>
+                        <div class="type-list" b-6hjxm53cr1><div style="background-color: #3DA224" b-dp48ejnp6b>Grass</div></div></a></div><div class="pokemon-item list-item" b-6hjxm53cr1><a href="pokemon/952" b-6hjxm53cr1><div class="image" b-6hjxm53cr1><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/952.png" b-6hjxm53cr1 /></div>
+                        <div class="number" b-6hjxm53cr1>N&#xBA; 952</div>
+                        <div class="name" b-6hjxm53cr1>Scovillain</div>
+                        <div class="type-list" b-6hjxm53cr1><div style="background-color: #3DA224" b-dp48ejnp6b>Grass</div><div style="background-color: #E72324" b-dp48ejnp6b>Fire</div></div></a></div><div class="pokemon-item list-item" b-6hjxm53cr1><a href="pokemon/953" b-6hjxm53cr1><div class="image" b-6hjxm53cr1><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/953.png" b-6hjxm53cr1 /></div>
+                        <div class="number" b-6hjxm53cr1>N&#xBA; 953</div>
+                        <div class="name" b-6hjxm53cr1>Rellor</div>
+                        <div class="type-list" b-6hjxm53cr1><div style="background-color: #92A212" b-dp48ejnp6b>Bug</div></div></a></div><div class="pokemon-item list-item" b-6hjxm53cr1><a href="pokemon/954" b-6hjxm53cr1><div class="image" b-6hjxm53cr1><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/954.png" b-6hjxm53cr1 /></div>
+                        <div class="number" b-6hjxm53cr1>N&#xBA; 954</div>
+                        <div class="name" b-6hjxm53cr1>Rabsca</div>
+                        <div class="type-list" b-6hjxm53cr1><div style="background-color: #92A212" b-dp48ejnp6b>Bug</div><div style="background-color: #EF3F7A" b-dp48ejnp6b>Psychic</div></div></a></div><div class="pokemon-item list-item" b-6hjxm53cr1><a href="pokemon/955" b-6hjxm53cr1><div class="image" b-6hjxm53cr1><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/955.png" b-6hjxm53cr1 /></div>
+                        <div class="number" b-6hjxm53cr1>N&#xBA; 955</div>
+                        <div class="name" b-6hjxm53cr1>Flittle</div>
+                        <div class="type-list" b-6hjxm53cr1><div style="background-color: #EF3F7A" b-dp48ejnp6b>Psychic</div></div></a></div><div class="pokemon-item list-item" b-6hjxm53cr1><a href="pokemon/956" b-6hjxm53cr1><div class="image" b-6hjxm53cr1><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/956.png" b-6hjxm53cr1 /></div>
+                        <div class="number" b-6hjxm53cr1>N&#xBA; 956</div>
+                        <div class="name" b-6hjxm53cr1>Espathra</div>
+                        <div class="type-list" b-6hjxm53cr1><div style="background-color: #EF3F7A" b-dp48ejnp6b>Psychic</div></div></a></div><div class="pokemon-item list-item" b-6hjxm53cr1><a href="pokemon/957" b-6hjxm53cr1><div class="image" b-6hjxm53cr1><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/957.png" b-6hjxm53cr1 /></div>
+                        <div class="number" b-6hjxm53cr1>N&#xBA; 957</div>
+                        <div class="name" b-6hjxm53cr1>Tinkatink</div>
+                        <div class="type-list" b-6hjxm53cr1><div style="background-color: #EF71EF" b-dp48ejnp6b>Fairy</div><div style="background-color: #60A2B9" b-dp48ejnp6b>Steel</div></div></a></div><div class="pokemon-item list-item" b-6hjxm53cr1><a href="pokemon/958" b-6hjxm53cr1><div class="image" b-6hjxm53cr1><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/958.png" b-6hjxm53cr1 /></div>
+                        <div class="number" b-6hjxm53cr1>N&#xBA; 958</div>
+                        <div class="name" b-6hjxm53cr1>Tinkatuff</div>
+                        <div class="type-list" b-6hjxm53cr1><div style="background-color: #EF71EF" b-dp48ejnp6b>Fairy</div><div style="background-color: #60A2B9" b-dp48ejnp6b>Steel</div></div></a></div><div class="pokemon-item list-item" b-6hjxm53cr1><a href="pokemon/959" b-6hjxm53cr1><div class="image" b-6hjxm53cr1><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/959.png" b-6hjxm53cr1 /></div>
+                        <div class="number" b-6hjxm53cr1>N&#xBA; 959</div>
+                        <div class="name" b-6hjxm53cr1>Tinkaton</div>
+                        <div class="type-list" b-6hjxm53cr1><div style="background-color: #EF71EF" b-dp48ejnp6b>Fairy</div><div style="background-color: #60A2B9" b-dp48ejnp6b>Steel</div></div></a></div><div class="pokemon-item list-item" b-6hjxm53cr1><a href="pokemon/960" b-6hjxm53cr1><div class="image" b-6hjxm53cr1><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/960.png" b-6hjxm53cr1 /></div>
+                        <div class="number" b-6hjxm53cr1>N&#xBA; 960</div>
+                        <div class="name" b-6hjxm53cr1>Wiglett</div>
+                        <div class="type-list" b-6hjxm53cr1><div style="background-color: #2481EF" b-dp48ejnp6b>Water</div></div></a></div><div class="pokemon-item list-item" b-6hjxm53cr1><a href="pokemon/961" b-6hjxm53cr1><div class="image" b-6hjxm53cr1><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/961.png" b-6hjxm53cr1 /></div>
+                        <div class="number" b-6hjxm53cr1>N&#xBA; 961</div>
+                        <div class="name" b-6hjxm53cr1>Wugtrio</div>
+                        <div class="type-list" b-6hjxm53cr1><div style="background-color: #2481EF" b-dp48ejnp6b>Water</div></div></a></div><div class="pokemon-item list-item" b-6hjxm53cr1><a href="pokemon/962" b-6hjxm53cr1><div class="image" b-6hjxm53cr1><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/962.png" b-6hjxm53cr1 /></div>
+                        <div class="number" b-6hjxm53cr1>N&#xBA; 962</div>
+                        <div class="name" b-6hjxm53cr1>Bombirdier</div>
+                        <div class="type-list" b-6hjxm53cr1><div style="background-color: #82BAEF" b-dp48ejnp6b>Flying</div><div style="background-color: #4F3F3D" b-dp48ejnp6b>Dark</div></div></a></div><div class="pokemon-item list-item" b-6hjxm53cr1><a href="pokemon/963" b-6hjxm53cr1><div class="image" b-6hjxm53cr1><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/963.png" b-6hjxm53cr1 /></div>
+                        <div class="number" b-6hjxm53cr1>N&#xBA; 963</div>
+                        <div class="name" b-6hjxm53cr1>Finizen</div>
+                        <div class="type-list" b-6hjxm53cr1><div style="background-color: #2481EF" b-dp48ejnp6b>Water</div></div></a></div><div class="pokemon-item list-item" b-6hjxm53cr1><a href="pokemon/964" b-6hjxm53cr1><div class="image" b-6hjxm53cr1><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/964.png" b-6hjxm53cr1 /></div>
+                        <div class="number" b-6hjxm53cr1>N&#xBA; 964</div>
+                        <div class="name" b-6hjxm53cr1>Palafin</div>
+                        <div class="type-list" b-6hjxm53cr1><div style="background-color: #2481EF" b-dp48ejnp6b>Water</div></div></a></div><div class="pokemon-item list-item" b-6hjxm53cr1><a href="pokemon/965" b-6hjxm53cr1><div class="image" b-6hjxm53cr1><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/965.png" b-6hjxm53cr1 /></div>
+                        <div class="number" b-6hjxm53cr1>N&#xBA; 965</div>
+                        <div class="name" b-6hjxm53cr1>Varoom</div>
+                        <div class="type-list" b-6hjxm53cr1><div style="background-color: #60A2B9" b-dp48ejnp6b>Steel</div><div style="background-color: #923FCC" b-dp48ejnp6b>Poison</div></div></a></div><div class="pokemon-item list-item" b-6hjxm53cr1><a href="pokemon/966" b-6hjxm53cr1><div class="image" b-6hjxm53cr1><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/966.png" b-6hjxm53cr1 /></div>
+                        <div class="number" b-6hjxm53cr1>N&#xBA; 966</div>
+                        <div class="name" b-6hjxm53cr1>Revavroom</div>
+                        <div class="type-list" b-6hjxm53cr1><div style="background-color: #60A2B9" b-dp48ejnp6b>Steel</div><div style="background-color: #923FCC" b-dp48ejnp6b>Poison</div></div></a></div><div class="pokemon-item list-item" b-6hjxm53cr1><a href="pokemon/967" b-6hjxm53cr1><div class="image" b-6hjxm53cr1><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/967.png" b-6hjxm53cr1 /></div>
+                        <div class="number" b-6hjxm53cr1>N&#xBA; 967</div>
+                        <div class="name" b-6hjxm53cr1>Cyclizar</div>
+                        <div class="type-list" b-6hjxm53cr1><div style="background-color: #4F60E2" b-dp48ejnp6b>Dragon</div><div style="background-color: #A0A2A0" b-dp48ejnp6b>Normal</div></div></a></div><div class="pokemon-item list-item" b-6hjxm53cr1><a href="pokemon/968" b-6hjxm53cr1><div class="image" b-6hjxm53cr1><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/968.png" b-6hjxm53cr1 /></div>
+                        <div class="number" b-6hjxm53cr1>N&#xBA; 968</div>
+                        <div class="name" b-6hjxm53cr1>Orthworm</div>
+                        <div class="type-list" b-6hjxm53cr1><div style="background-color: #60A2B9" b-dp48ejnp6b>Steel</div></div></a></div><div class="pokemon-item list-item" b-6hjxm53cr1><a href="pokemon/969" b-6hjxm53cr1><div class="image" b-6hjxm53cr1><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/969.png" b-6hjxm53cr1 /></div>
+                        <div class="number" b-6hjxm53cr1>N&#xBA; 969</div>
+                        <div class="name" b-6hjxm53cr1>Glimmet</div>
+                        <div class="type-list" b-6hjxm53cr1><div style="background-color: #B0AB82" b-dp48ejnp6b>Rock</div><div style="background-color: #923FCC" b-dp48ejnp6b>Poison</div></div></a></div><div class="pokemon-item list-item" b-6hjxm53cr1><a href="pokemon/970" b-6hjxm53cr1><div class="image" b-6hjxm53cr1><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/970.png" b-6hjxm53cr1 /></div>
+                        <div class="number" b-6hjxm53cr1>N&#xBA; 970</div>
+                        <div class="name" b-6hjxm53cr1>Glimmora</div>
+                        <div class="type-list" b-6hjxm53cr1><div style="background-color: #B0AB82" b-dp48ejnp6b>Rock</div><div style="background-color: #923FCC" b-dp48ejnp6b>Poison</div></div></a></div><div class="pokemon-item list-item" b-6hjxm53cr1><a href="pokemon/971" b-6hjxm53cr1><div class="image" b-6hjxm53cr1><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/971.png" b-6hjxm53cr1 /></div>
+                        <div class="number" b-6hjxm53cr1>N&#xBA; 971</div>
+                        <div class="name" b-6hjxm53cr1>Greavard</div>
+                        <div class="type-list" b-6hjxm53cr1><div style="background-color: #713F71" b-dp48ejnp6b>Ghost</div></div></a></div><div class="pokemon-item list-item" b-6hjxm53cr1><a href="pokemon/972" b-6hjxm53cr1><div class="image" b-6hjxm53cr1><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/972.png" b-6hjxm53cr1 /></div>
+                        <div class="number" b-6hjxm53cr1>N&#xBA; 972</div>
+                        <div class="name" b-6hjxm53cr1>Houndstone</div>
+                        <div class="type-list" b-6hjxm53cr1><div style="background-color: #713F71" b-dp48ejnp6b>Ghost</div></div></a></div><div class="pokemon-item list-item" b-6hjxm53cr1><a href="pokemon/973" b-6hjxm53cr1><div class="image" b-6hjxm53cr1><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/973.png" b-6hjxm53cr1 /></div>
+                        <div class="number" b-6hjxm53cr1>N&#xBA; 973</div>
+                        <div class="name" b-6hjxm53cr1>Flamigo</div>
+                        <div class="type-list" b-6hjxm53cr1><div style="background-color: #82BAEF" b-dp48ejnp6b>Flying</div><div style="background-color: #FF8100" b-dp48ejnp6b>Fighting</div></div></a></div><div class="pokemon-item list-item" b-6hjxm53cr1><a href="pokemon/974" b-6hjxm53cr1><div class="image" b-6hjxm53cr1><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/974.png" b-6hjxm53cr1 /></div>
+                        <div class="number" b-6hjxm53cr1>N&#xBA; 974</div>
+                        <div class="name" b-6hjxm53cr1>Cetoddle</div>
+                        <div class="type-list" b-6hjxm53cr1><div style="background-color: #3DD9FF" b-dp48ejnp6b>Ice</div></div></a></div><div class="pokemon-item list-item" b-6hjxm53cr1><a href="pokemon/975" b-6hjxm53cr1><div class="image" b-6hjxm53cr1><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/975.png" b-6hjxm53cr1 /></div>
+                        <div class="number" b-6hjxm53cr1>N&#xBA; 975</div>
+                        <div class="name" b-6hjxm53cr1>Cetitan</div>
+                        <div class="type-list" b-6hjxm53cr1><div style="background-color: #3DD9FF" b-dp48ejnp6b>Ice</div></div></a></div><div class="pokemon-item list-item" b-6hjxm53cr1><a href="pokemon/976" b-6hjxm53cr1><div class="image" b-6hjxm53cr1><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/976.png" b-6hjxm53cr1 /></div>
+                        <div class="number" b-6hjxm53cr1>N&#xBA; 976</div>
+                        <div class="name" b-6hjxm53cr1>Veluza</div>
+                        <div class="type-list" b-6hjxm53cr1><div style="background-color: #2481EF" b-dp48ejnp6b>Water</div><div style="background-color: #EF3F7A" b-dp48ejnp6b>Psychic</div></div></a></div><div class="pokemon-item list-item" b-6hjxm53cr1><a href="pokemon/977" b-6hjxm53cr1><div class="image" b-6hjxm53cr1><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/977.png" b-6hjxm53cr1 /></div>
+                        <div class="number" b-6hjxm53cr1>N&#xBA; 977</div>
+                        <div class="name" b-6hjxm53cr1>Dondozo</div>
+                        <div class="type-list" b-6hjxm53cr1><div style="background-color: #2481EF" b-dp48ejnp6b>Water</div></div></a></div><div class="pokemon-item list-item" b-6hjxm53cr1><a href="pokemon/978" b-6hjxm53cr1><div class="image" b-6hjxm53cr1><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/978.png" b-6hjxm53cr1 /></div>
+                        <div class="number" b-6hjxm53cr1>N&#xBA; 978</div>
+                        <div class="name" b-6hjxm53cr1>Tatsugiri</div>
+                        <div class="type-list" b-6hjxm53cr1><div style="background-color: #4F60E2" b-dp48ejnp6b>Dragon</div><div style="background-color: #2481EF" b-dp48ejnp6b>Water</div></div></a></div><div class="pokemon-item list-item" b-6hjxm53cr1><a href="pokemon/979" b-6hjxm53cr1><div class="image" b-6hjxm53cr1><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/979.png" b-6hjxm53cr1 /></div>
+                        <div class="number" b-6hjxm53cr1>N&#xBA; 979</div>
+                        <div class="name" b-6hjxm53cr1>Annihilape</div>
+                        <div class="type-list" b-6hjxm53cr1><div style="background-color: #FF8100" b-dp48ejnp6b>Fighting</div><div style="background-color: #713F71" b-dp48ejnp6b>Ghost</div></div></a></div><div class="pokemon-item list-item" b-6hjxm53cr1><a href="pokemon/980" b-6hjxm53cr1><div class="image" b-6hjxm53cr1><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/980.png" b-6hjxm53cr1 /></div>
+                        <div class="number" b-6hjxm53cr1>N&#xBA; 980</div>
+                        <div class="name" b-6hjxm53cr1>Clodsire</div>
+                        <div class="type-list" b-6hjxm53cr1><div style="background-color: #923FCC" b-dp48ejnp6b>Poison</div><div style="background-color: #92501B" b-dp48ejnp6b>Ground</div></div></a></div><div class="pokemon-item list-item" b-6hjxm53cr1><a href="pokemon/981" b-6hjxm53cr1><div class="image" b-6hjxm53cr1><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/981.png" b-6hjxm53cr1 /></div>
+                        <div class="number" b-6hjxm53cr1>N&#xBA; 981</div>
+                        <div class="name" b-6hjxm53cr1>Farigiraf</div>
+                        <div class="type-list" b-6hjxm53cr1><div style="background-color: #A0A2A0" b-dp48ejnp6b>Normal</div><div style="background-color: #EF3F7A" b-dp48ejnp6b>Psychic</div></div></a></div><div class="pokemon-item list-item" b-6hjxm53cr1><a href="pokemon/982" b-6hjxm53cr1><div class="image" b-6hjxm53cr1><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/982.png" b-6hjxm53cr1 /></div>
+                        <div class="number" b-6hjxm53cr1>N&#xBA; 982</div>
+                        <div class="name" b-6hjxm53cr1>Dudunsparce</div>
+                        <div class="type-list" b-6hjxm53cr1><div style="background-color: #A0A2A0" b-dp48ejnp6b>Normal</div></div></a></div><div class="pokemon-item list-item" b-6hjxm53cr1><a href="pokemon/983" b-6hjxm53cr1><div class="image" b-6hjxm53cr1><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/983.png" b-6hjxm53cr1 /></div>
+                        <div class="number" b-6hjxm53cr1>N&#xBA; 983</div>
+                        <div class="name" b-6hjxm53cr1>Kingambit</div>
+                        <div class="type-list" b-6hjxm53cr1><div style="background-color: #4F3F3D" b-dp48ejnp6b>Dark</div><div style="background-color: #60A2B9" b-dp48ejnp6b>Steel</div></div></a></div><div class="pokemon-item list-item" b-6hjxm53cr1><a href="pokemon/984" b-6hjxm53cr1><div class="image" b-6hjxm53cr1><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/984.png" b-6hjxm53cr1 /></div>
+                        <div class="number" b-6hjxm53cr1>N&#xBA; 984</div>
+                        <div class="name" b-6hjxm53cr1>Great Tusk</div>
+                        <div class="type-list" b-6hjxm53cr1><div style="background-color: #92501B" b-dp48ejnp6b>Ground</div><div style="background-color: #FF8100" b-dp48ejnp6b>Fighting</div></div></a></div><div class="pokemon-item list-item" b-6hjxm53cr1><a href="pokemon/985" b-6hjxm53cr1><div class="image" b-6hjxm53cr1><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/985.png" b-6hjxm53cr1 /></div>
+                        <div class="number" b-6hjxm53cr1>N&#xBA; 985</div>
+                        <div class="name" b-6hjxm53cr1>Scream Tail</div>
+                        <div class="type-list" b-6hjxm53cr1><div style="background-color: #EF71EF" b-dp48ejnp6b>Fairy</div><div style="background-color: #EF3F7A" b-dp48ejnp6b>Psychic</div></div></a></div><div class="pokemon-item list-item" b-6hjxm53cr1><a href="pokemon/986" b-6hjxm53cr1><div class="image" b-6hjxm53cr1><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/986.png" b-6hjxm53cr1 /></div>
+                        <div class="number" b-6hjxm53cr1>N&#xBA; 986</div>
+                        <div class="name" b-6hjxm53cr1>Brute Bonnet</div>
+                        <div class="type-list" b-6hjxm53cr1><div style="background-color: #3DA224" b-dp48ejnp6b>Grass</div><div style="background-color: #4F3F3D" b-dp48ejnp6b>Dark</div></div></a></div><div class="pokemon-item list-item" b-6hjxm53cr1><a href="pokemon/987" b-6hjxm53cr1><div class="image" b-6hjxm53cr1><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/987.png" b-6hjxm53cr1 /></div>
+                        <div class="number" b-6hjxm53cr1>N&#xBA; 987</div>
+                        <div class="name" b-6hjxm53cr1>Flutter Mane</div>
+                        <div class="type-list" b-6hjxm53cr1><div style="background-color: #713F71" b-dp48ejnp6b>Ghost</div><div style="background-color: #EF71EF" b-dp48ejnp6b>Fairy</div></div></a></div><div class="pokemon-item list-item" b-6hjxm53cr1><a href="pokemon/988" b-6hjxm53cr1><div class="image" b-6hjxm53cr1><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/988.png" b-6hjxm53cr1 /></div>
+                        <div class="number" b-6hjxm53cr1>N&#xBA; 988</div>
+                        <div class="name" b-6hjxm53cr1>Slither Wing</div>
+                        <div class="type-list" b-6hjxm53cr1><div style="background-color: #92A212" b-dp48ejnp6b>Bug</div><div style="background-color: #FF8100" b-dp48ejnp6b>Fighting</div></div></a></div><div class="pokemon-item list-item" b-6hjxm53cr1><a href="pokemon/989" b-6hjxm53cr1><div class="image" b-6hjxm53cr1><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/989.png" b-6hjxm53cr1 /></div>
+                        <div class="number" b-6hjxm53cr1>N&#xBA; 989</div>
+                        <div class="name" b-6hjxm53cr1>Sandy Shocks</div>
+                        <div class="type-list" b-6hjxm53cr1><div style="background-color: #FAC100" b-dp48ejnp6b>Electric</div><div style="background-color: #92501B" b-dp48ejnp6b>Ground</div></div></a></div><div class="pokemon-item list-item" b-6hjxm53cr1><a href="pokemon/990" b-6hjxm53cr1><div class="image" b-6hjxm53cr1><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/990.png" b-6hjxm53cr1 /></div>
+                        <div class="number" b-6hjxm53cr1>N&#xBA; 990</div>
+                        <div class="name" b-6hjxm53cr1>Iron Treads</div>
+                        <div class="type-list" b-6hjxm53cr1><div style="background-color: #92501B" b-dp48ejnp6b>Ground</div><div style="background-color: #60A2B9" b-dp48ejnp6b>Steel</div></div></a></div><div class="pokemon-item list-item" b-6hjxm53cr1><a href="pokemon/991" b-6hjxm53cr1><div class="image" b-6hjxm53cr1><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/991.png" b-6hjxm53cr1 /></div>
+                        <div class="number" b-6hjxm53cr1>N&#xBA; 991</div>
+                        <div class="name" b-6hjxm53cr1>Iron Bundle</div>
+                        <div class="type-list" b-6hjxm53cr1><div style="background-color: #3DD9FF" b-dp48ejnp6b>Ice</div><div style="background-color: #2481EF" b-dp48ejnp6b>Water</div></div></a></div><div class="pokemon-item list-item" b-6hjxm53cr1><a href="pokemon/992" b-6hjxm53cr1><div class="image" b-6hjxm53cr1><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/992.png" b-6hjxm53cr1 /></div>
+                        <div class="number" b-6hjxm53cr1>N&#xBA; 992</div>
+                        <div class="name" b-6hjxm53cr1>Iron Hands</div>
+                        <div class="type-list" b-6hjxm53cr1><div style="background-color: #FF8100" b-dp48ejnp6b>Fighting</div><div style="background-color: #FAC100" b-dp48ejnp6b>Electric</div></div></a></div><div class="pokemon-item list-item" b-6hjxm53cr1><a href="pokemon/993" b-6hjxm53cr1><div class="image" b-6hjxm53cr1><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/993.png" b-6hjxm53cr1 /></div>
+                        <div class="number" b-6hjxm53cr1>N&#xBA; 993</div>
+                        <div class="name" b-6hjxm53cr1>Iron Jugulis</div>
+                        <div class="type-list" b-6hjxm53cr1><div style="background-color: #4F3F3D" b-dp48ejnp6b>Dark</div><div style="background-color: #82BAEF" b-dp48ejnp6b>Flying</div></div></a></div><div class="pokemon-item list-item" b-6hjxm53cr1><a href="pokemon/994" b-6hjxm53cr1><div class="image" b-6hjxm53cr1><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/994.png" b-6hjxm53cr1 /></div>
+                        <div class="number" b-6hjxm53cr1>N&#xBA; 994</div>
+                        <div class="name" b-6hjxm53cr1>Iron Moth</div>
+                        <div class="type-list" b-6hjxm53cr1><div style="background-color: #E72324" b-dp48ejnp6b>Fire</div><div style="background-color: #923FCC" b-dp48ejnp6b>Poison</div></div></a></div><div class="pokemon-item list-item" b-6hjxm53cr1><a href="pokemon/995" b-6hjxm53cr1><div class="image" b-6hjxm53cr1><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/995.png" b-6hjxm53cr1 /></div>
+                        <div class="number" b-6hjxm53cr1>N&#xBA; 995</div>
+                        <div class="name" b-6hjxm53cr1>Iron Thorns</div>
+                        <div class="type-list" b-6hjxm53cr1><div style="background-color: #B0AB82" b-dp48ejnp6b>Rock</div><div style="background-color: #FAC100" b-dp48ejnp6b>Electric</div></div></a></div><div class="pokemon-item list-item" b-6hjxm53cr1><a href="pokemon/996" b-6hjxm53cr1><div class="image" b-6hjxm53cr1><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/996.png" b-6hjxm53cr1 /></div>
+                        <div class="number" b-6hjxm53cr1>N&#xBA; 996</div>
+                        <div class="name" b-6hjxm53cr1>Frigibax</div>
+                        <div class="type-list" b-6hjxm53cr1><div style="background-color: #4F60E2" b-dp48ejnp6b>Dragon</div><div style="background-color: #3DD9FF" b-dp48ejnp6b>Ice</div></div></a></div><div class="pokemon-item list-item" b-6hjxm53cr1><a href="pokemon/997" b-6hjxm53cr1><div class="image" b-6hjxm53cr1><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/997.png" b-6hjxm53cr1 /></div>
+                        <div class="number" b-6hjxm53cr1>N&#xBA; 997</div>
+                        <div class="name" b-6hjxm53cr1>Arctibax</div>
+                        <div class="type-list" b-6hjxm53cr1><div style="background-color: #4F60E2" b-dp48ejnp6b>Dragon</div><div style="background-color: #3DD9FF" b-dp48ejnp6b>Ice</div></div></a></div><div class="pokemon-item list-item" b-6hjxm53cr1><a href="pokemon/998" b-6hjxm53cr1><div class="image" b-6hjxm53cr1><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/998.png" b-6hjxm53cr1 /></div>
+                        <div class="number" b-6hjxm53cr1>N&#xBA; 998</div>
+                        <div class="name" b-6hjxm53cr1>Baxcalibur</div>
+                        <div class="type-list" b-6hjxm53cr1><div style="background-color: #4F60E2" b-dp48ejnp6b>Dragon</div><div style="background-color: #3DD9FF" b-dp48ejnp6b>Ice</div></div></a></div><div class="pokemon-item list-item" b-6hjxm53cr1><a href="pokemon/999" b-6hjxm53cr1><div class="image" b-6hjxm53cr1><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/999.png" b-6hjxm53cr1 /></div>
+                        <div class="number" b-6hjxm53cr1>N&#xBA; 999</div>
+                        <div class="name" b-6hjxm53cr1>Gimmighoul</div>
+                        <div class="type-list" b-6hjxm53cr1><div style="background-color: #713F71" b-dp48ejnp6b>Ghost</div></div></a></div><div class="pokemon-item list-item" b-6hjxm53cr1><a href="pokemon/1000" b-6hjxm53cr1><div class="image" b-6hjxm53cr1><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1000.png" b-6hjxm53cr1 /></div>
+                        <div class="number" b-6hjxm53cr1>N&#xBA; 1000</div>
+                        <div class="name" b-6hjxm53cr1>Gholdengo</div>
+                        <div class="type-list" b-6hjxm53cr1><div style="background-color: #60A2B9" b-dp48ejnp6b>Steel</div><div style="background-color: #713F71" b-dp48ejnp6b>Ghost</div></div></a></div><div class="pokemon-item list-item" b-6hjxm53cr1><a href="pokemon/1001" b-6hjxm53cr1><div class="image" b-6hjxm53cr1><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1001.png" b-6hjxm53cr1 /></div>
+                        <div class="number" b-6hjxm53cr1>N&#xBA; 1001</div>
+                        <div class="name" b-6hjxm53cr1>Wo-Chien</div>
+                        <div class="type-list" b-6hjxm53cr1><div style="background-color: #4F3F3D" b-dp48ejnp6b>Dark</div><div style="background-color: #3DA224" b-dp48ejnp6b>Grass</div></div></a></div><div class="pokemon-item list-item" b-6hjxm53cr1><a href="pokemon/1002" b-6hjxm53cr1><div class="image" b-6hjxm53cr1><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1002.png" b-6hjxm53cr1 /></div>
+                        <div class="number" b-6hjxm53cr1>N&#xBA; 1002</div>
+                        <div class="name" b-6hjxm53cr1>Chien-Pao</div>
+                        <div class="type-list" b-6hjxm53cr1><div style="background-color: #4F3F3D" b-dp48ejnp6b>Dark</div><div style="background-color: #3DD9FF" b-dp48ejnp6b>Ice</div></div></a></div><div class="pokemon-item list-item" b-6hjxm53cr1><a href="pokemon/1003" b-6hjxm53cr1><div class="image" b-6hjxm53cr1><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1003.png" b-6hjxm53cr1 /></div>
+                        <div class="number" b-6hjxm53cr1>N&#xBA; 1003</div>
+                        <div class="name" b-6hjxm53cr1>Ting-Lu</div>
+                        <div class="type-list" b-6hjxm53cr1><div style="background-color: #4F3F3D" b-dp48ejnp6b>Dark</div><div style="background-color: #92501B" b-dp48ejnp6b>Ground</div></div></a></div><div class="pokemon-item list-item" b-6hjxm53cr1><a href="pokemon/1004" b-6hjxm53cr1><div class="image" b-6hjxm53cr1><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1004.png" b-6hjxm53cr1 /></div>
+                        <div class="number" b-6hjxm53cr1>N&#xBA; 1004</div>
+                        <div class="name" b-6hjxm53cr1>Chi-Yu</div>
+                        <div class="type-list" b-6hjxm53cr1><div style="background-color: #4F3F3D" b-dp48ejnp6b>Dark</div><div style="background-color: #E72324" b-dp48ejnp6b>Fire</div></div></a></div><div class="pokemon-item list-item" b-6hjxm53cr1><a href="pokemon/1005" b-6hjxm53cr1><div class="image" b-6hjxm53cr1><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1005.png" b-6hjxm53cr1 /></div>
+                        <div class="number" b-6hjxm53cr1>N&#xBA; 1005</div>
+                        <div class="name" b-6hjxm53cr1>Roaring Moon</div>
+                        <div class="type-list" b-6hjxm53cr1><div style="background-color: #4F60E2" b-dp48ejnp6b>Dragon</div><div style="background-color: #4F3F3D" b-dp48ejnp6b>Dark</div></div></a></div><div class="pokemon-item list-item" b-6hjxm53cr1><a href="pokemon/1006" b-6hjxm53cr1><div class="image" b-6hjxm53cr1><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1006.png" b-6hjxm53cr1 /></div>
+                        <div class="number" b-6hjxm53cr1>N&#xBA; 1006</div>
+                        <div class="name" b-6hjxm53cr1>Iron Valiant</div>
+                        <div class="type-list" b-6hjxm53cr1><div style="background-color: #EF71EF" b-dp48ejnp6b>Fairy</div><div style="background-color: #FF8100" b-dp48ejnp6b>Fighting</div></div></a></div><div class="pokemon-item list-item" b-6hjxm53cr1><a href="pokemon/1007" b-6hjxm53cr1><div class="image" b-6hjxm53cr1><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1007.png" b-6hjxm53cr1 /></div>
+                        <div class="number" b-6hjxm53cr1>N&#xBA; 1007</div>
+                        <div class="name" b-6hjxm53cr1>Koraidon</div>
+                        <div class="type-list" b-6hjxm53cr1><div style="background-color: #FF8100" b-dp48ejnp6b>Fighting</div><div style="background-color: #4F60E2" b-dp48ejnp6b>Dragon</div></div></a></div><div class="pokemon-item list-item" b-6hjxm53cr1><a href="pokemon/1008" b-6hjxm53cr1><div class="image" b-6hjxm53cr1><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1008.png" b-6hjxm53cr1 /></div>
+                        <div class="number" b-6hjxm53cr1>N&#xBA; 1008</div>
+                        <div class="name" b-6hjxm53cr1>Miraidon</div>
+                        <div class="type-list" b-6hjxm53cr1><div style="background-color: #FAC100" b-dp48ejnp6b>Electric</div><div style="background-color: #4F60E2" b-dp48ejnp6b>Dragon</div></div></a></div><div class="pokemon-item list-item" b-6hjxm53cr1><a href="pokemon/1009" b-6hjxm53cr1><div class="image" b-6hjxm53cr1><img b-6hjxm53cr1 /></div>
+                        <div class="number" b-6hjxm53cr1>N&#xBA; 1009</div>
+                        <div class="name" b-6hjxm53cr1>Walking Wake</div>
+                        <div class="type-list" b-6hjxm53cr1><div style="background-color: #2481EF" b-dp48ejnp6b>Water</div><div style="background-color: #4F60E2" b-dp48ejnp6b>Dragon</div></div></a></div><div class="pokemon-item list-item" b-6hjxm53cr1><a href="pokemon/1010" b-6hjxm53cr1><div class="image" b-6hjxm53cr1><img b-6hjxm53cr1 /></div>
+                        <div class="number" b-6hjxm53cr1>N&#xBA; 1010</div>
+                        <div class="name" b-6hjxm53cr1>Iron Leaves</div>
+                        <div class="type-list" b-6hjxm53cr1><div style="background-color: #3DA224" b-dp48ejnp6b>Grass</div><div style="background-color: #EF3F7A" b-dp48ejnp6b>Psychic</div></div></a></div></div></div></main></div>
+        
+
+</div>
+<!-- %%-PRERENDERING-END-%% -->
+</div>
+
+    <div id="blazor-error-ui">
+        An unhandled error has occurred.
+        <a href="" class="reload">Reload</a>
+        <a class="dismiss">🗙</a>
+    </div>
+    <script src="_framework/blazor.webassembly.js"></script>
+    <script>navigator.serviceWorker.register('service-worker.js');</script>
+
+
+
+</body></html>
