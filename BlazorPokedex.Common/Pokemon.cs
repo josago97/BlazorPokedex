@@ -10,4 +10,5 @@ public class Pokemon
     public int Weight { get; set; }
     public int GenderRate { get; set; }
     public PokemonStat[] Stats { get; set; }
+    public Evolution Evolution { get; set; }
 }
