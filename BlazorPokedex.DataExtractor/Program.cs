@@ -75,8 +75,7 @@ class Program
             {
                 Id = pokemon.Id,
                 Name = specie.Names.First(n => n.Language.Name == "en").Name,
-                ImageUrl = pokemon.Sprites.Other.DreamWorld.FrontDefault
-                    ?? pokemon.Sprites.Other.OfficialArtwork.FrontDefault,
+                ImageUrl = pokemon.Sprites.Other.OfficialArtwork.FrontDefault,
                 Types = pokemon.Types.OrderBy(t => t.Slot).Select(ConvertToPokemonType).ToArray(),
                 Height = pokemon.Height,
                 Weight = pokemon.Weight,

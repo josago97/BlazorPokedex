@@ -18,30 +18,20 @@ public partial class PokemonDetails : IAsyncDisposable
     private IJSObjectReference JSModule { get; set; }
     private Pokemon Pokemon { get; set; }
 
-    protected override async Task OnInitializedAsync()
-    {
-        await base.OnInitializedAsync();
-
-        
-    }
-
     protected override async Task OnParametersSetAsync()
     {
-        Pokemon = await PokeApi.GetPokemonAsync(PokemonId);
-
-        
+        Pokemon = await PokeApi.GetPokemonAsync(PokemonId);  
     }
 
     protected override async Task OnAfterRenderAsync(bool firstRender)
     {
         await base.OnAfterRenderAsync(firstRender);
 
-
         if (firstRender)
         {
             string jsPath = "./" + Utils.GetStaticFileUrl("app.js");
             JSModule = await JsRuntime.InvokeAsync<IJSObjectReference>("import", jsPath);
-            await JSModule.InvokeVoidAsync("setFavicon", Pokemon.ImageUrl);
+            //await JSModule.InvokeVoidAsync("setFavicon", Pokemon.IconUrl);
         }
     }
 
@@ -60,6 +50,6 @@ public partial class PokemonDetails : IAsyncDisposable
 
     public async ValueTask DisposeAsync()
     {
-        await JSModule.InvokeVoidAsync("setFavicon", "favicon.ico");
+        //await JSModule.InvokeVoidAsync("setFavicon", "favicon.ico");
     }
 }

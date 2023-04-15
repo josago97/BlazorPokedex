@@ -20,6 +20,7 @@ namespace BlazorPokedex.Maui
             builder.Services.AddBlazorWebViewDeveloperTools();
 #endif
             builder.Services.AddSingleton<IPokeApi, PokeApi>();
+            BlazorCommon.Program.Init(builder.Services);
 
             return builder.Build();
         }

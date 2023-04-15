@@ -1,5 +1,4 @@
 ﻿@page "/pokemon/{PokemonId:int}"
-@using BlazorPokedex.BlazorCommon.Components
 
 @if (Pokemon == null)
 {
@@ -7,6 +6,9 @@
 }
 else
 {
+    <PageTitle>@Pokemon.Name</PageTitle>
+    <PageIcon Href="@Pokemon.ImageUrl" />
+
     <div class="data-container">
         <div class="content">
             <div class="title">

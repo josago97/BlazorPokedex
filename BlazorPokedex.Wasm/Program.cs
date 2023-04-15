@@ -24,5 +24,6 @@ public class Program
     {
         services.AddScoped(sp => new HttpClient { BaseAddress = new Uri(baseAddress) });
         services.AddSingleton<IPokeApi, PokeApi>();
+        BlazorCommon.Program.Init(services);
     }
 }
